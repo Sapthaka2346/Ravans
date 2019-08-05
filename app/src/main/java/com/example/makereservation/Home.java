@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
     Button Reservation;
+    Button pay1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Reservation= (Button) findViewById(R.id.Reservation);
+
 
         Reservation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,5 +28,16 @@ public class Home extends AppCompatActivity {
 
         });
 
+
+
     }
+    //button on click
+    public void clickv(View v){
+
+            Intent click =new Intent(this,payment1.class);
+            startActivity(click);
+    }
+
+
+
 }

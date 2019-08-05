@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,158 +9,130 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/sdd"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back1"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/bookNowBtn"
-            android:layout_width="163dp"
-            android:layout_height="54dp"
+            android:layout_width="162dp"
+            android:layout_height="49dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="8dp"
             android:background="#FF9800"
             android:text="Facilities"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.885" />
+            app:layout_constraintTop_toBottomOf="@+id/bookNowBtn7" />
 
         <Button
             android:id="@+id/bookNowBtn7"
-            android:layout_width="163dp"
-            android:layout_height="54dp"
+            android:layout_width="160dp"
+            android:layout_height="42dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
+            android:onClick="clickv"
             android:text="Payment"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.744" />
+            app:layout_constraintTop_toBottomOf="@+id/bookNowBtn4" />
 
         <Button
             android:id="@+id/bookNowBtn6"
-            android:layout_width="163dp"
-            android:layout_height="54dp"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
             android:text="Rooms"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.604" />
+            app:layout_constraintTop_toBottomOf="@+id/bookNowBtn3" />
 
         <Button
             android:id="@+id/bookNowBtn5"
-            android:layout_width="163dp"
-            android:layout_height="54dp"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
             android:text="Gallery"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.885" />
+            app:layout_constraintTop_toBottomOf="@+id/bookNowBtn6" />
 
         <Button
             android:id="@+id/bookNowBtn4"
-            android:layout_width="161dp"
-            android:layout_height="53dp"
+            android:layout_width="156dp"
+            android:layout_height="46dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
             android:text="Contact Us"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn7"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.743" />
+            app:layout_constraintTop_toBottomOf="@+id/bookNowBtn5" />
 
         <Button
             android:id="@+id/bookNowBtn3"
-            android:layout_width="166dp"
-            android:layout_height="53dp"
+            android:layout_width="163dp"
+            android:layout_height="47dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
             android:text="Book Now"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.603" />
+            app:layout_constraintTop_toBottomOf="@+id/Reservation" />
 
         <Button
             android:id="@+id/Reservation"
             android:layout_width="166dp"
             android:layout_height="46dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="24dp"
             android:background="#FF9800"
             android:text="Reservation"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bookNowBtn3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.603" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="157dp"
-            android:layout_height="94dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.04"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.03"
-            app:srcCompat="@drawable/download" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="183dp"
-            android:layout_height="46dp"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:background="#FF9800"
             android:text="Paradise Hotel"
             android:textColor="#0A0A0A"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -212,7 +185,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.311"
+            app:layout_constraintVertical_bias="0.3"
             app:srcCompat="@drawable/add" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:text="Galle,Road Colombo 003"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
