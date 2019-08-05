@@ -38,6 +38,10 @@ public class Home extends AppCompatActivity {
             startActivity(click);
     }
 
+    public void clickRooms(View v){
 
+        Intent click =new Intent(this,Room.class);
+        startActivity(click);
+    }
 
 }

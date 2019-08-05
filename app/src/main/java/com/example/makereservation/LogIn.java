@@ -26,4 +26,10 @@ public class LogIn extends AppCompatActivity {
 
         });
     }
+
+    public void addDetasils(View v){
+
+        Intent click =new Intent(this,Adddetails.class);
+        startActivity(click);
+    }
 }
