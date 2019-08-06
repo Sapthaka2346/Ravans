@@ -163,6 +163,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="checkAvailabilityBtnClicked"
         android:text="Check Availability"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
