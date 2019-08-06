@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Make Reservation</string>
+    <string name="app_name">Hotel Reservation</string>
     <string name="check_in">Check-In</string>
     <string name="check_out">Check-Out</string>
     <string name="childs">Childs</string>
