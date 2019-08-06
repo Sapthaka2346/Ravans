@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
     Button Reservation;
-    Button pay1;
+    Button pay1, contactBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class Home extends AppCompatActivity {
 
         });
 
+        contactBtn = (Button) findViewById(R.id.bookNowBtn4);
 
 
     }
@@ -44,4 +46,9 @@ public class Home extends AppCompatActivity {
         startActivity(click);
     }
 
+    public void contactUsClick(View view) {
+        Intent click =new Intent(this,contact.class);
+        startActivity(click);
+
+    }
 }
