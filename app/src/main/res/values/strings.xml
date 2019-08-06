@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">Make Reservation</string>
+    <string name="check_in">Check-In</string>
+    <string name="check_out">Check-Out</string>
+    <string name="childs">Childs</string>
+    <string name="room_type">Room Type</string>
+    <string name="silver">Silver</string>
+    <string name="platinum">Platinum</string>
+    <string name="bronze">Bronze</string>
+    <string name="paradise_hotel">Paradise Hotel</string>
+    <string name="full_name">Full Name:</string>
+    <string name="submit">Submit</string>
+    <string name="address">Address</string>
+    <string name="book_now">Book Now</string>
+    <string name="rooms">Rooms</string>
+    <string name="facilities">Facilities</string>
+    <string name="gallery">Gallery</string>
+    <string name="payment">Payment</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="reservation">Reservation</string>
+    <string name="galle_road_colombo_003">Galle,Road Colombo 003</string>
+    <string name="cntact_no">Cntact No:</string>
+    <string name="user_login">User Login</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="reception_2">Reception 2</string>
+    <string name="make_reservation">Make Reservation</string>
+    <string name="_0771265341">+0771265341</string>
+    <string name="_0712076543">+0712076543</string>
+    <string name="sam_gmail_com">sam@gmail.com</string>
+    <string name="reception_1">Reception 1</string>
+    <string name="piyal_gmail_com">piyal@gmail.com</string>
+    <string name="your_message">Your Message:</string>
+    <string name="hotel">HOTEL</string>
+    <string name="add">Add</string>
+    <string name="bronze_package">Bronze Package</string>
+    <string name="check_availability">check availability</string>
+    <string name="platinum_package">Platinum Package</string>
+    <string name="silver_package">Silver Package</string>
+    <string name="check_avialability">check avialability</string>
+    <string name="gold_package">Gold Package</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="paradise">PARADISE</string>
+    <string name="view_message">View Message</string>
+
+
 </resources>

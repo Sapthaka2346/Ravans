@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/one11"
-    tools:context=".MainActivity">
+    tools:context=".contact">
 
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="24dp"
         android:gravity="center"
-        android:text="Contact Us"
+        android:text="@string/contact_us"
         android:textColor="#041966"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Your Message:"
+        android:text="@string/your_message"
         android:textColor="#FA141313"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/contactMessage"
@@ -116,7 +116,7 @@
         android:layout_marginBottom="16dp"
         android:onClick="sendData"
         android:shadowColor="#00140606"
-        android:text="Submit"
+        android:text="@string/submit"
         app:backgroundTint="#FF4500"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,7 +150,7 @@
         android:layout_height="48dp"
         android:layout_marginEnd="112dp"
         android:layout_marginBottom="8dp"
-        android:text="HOTEL"
+        android:text="@string/hotel"
         android:textColor="#F5EEDC"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

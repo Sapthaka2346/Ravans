@@ -95,7 +95,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FF9800"
-        android:text="Paradise Hotel"
+        android:text="@string/paradise_hotel"
         android:textColor="#0A0A0A"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,7 +134,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
         android:background="#FF9800"
-        android:text="Submit"
+        android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -150,7 +150,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Check-In"
+        android:text="@string/check_in"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
@@ -169,7 +169,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Address"
+        android:text="@string/address"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
@@ -188,7 +188,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Check-Out"
+        android:text="@string/check_out"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
@@ -226,7 +226,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Full Name:"
+        android:text="@string/full_name"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
@@ -321,12 +321,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="386dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="540dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

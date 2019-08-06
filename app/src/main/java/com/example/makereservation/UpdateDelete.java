@@ -2,6 +2,7 @@ package com.example.makereservation;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,5 +31,10 @@ public class UpdateDelete extends AppCompatActivity {
         nt3.setText(s3);
         nt4.setText(s4);
 
+    }
+
+    public void onUpdateButtonPushed(View view){
+        Intent update = new Intent(UpdateDelete.this, ViewMessage.class);
+        startActivity(update);
     }
 }

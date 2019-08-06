@@ -1,7 +1,10 @@
 package com.example.makereservation;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,5 +25,10 @@ public class contact extends AppCompatActivity {
         EditText nt3 = findViewById(R.id.editText10);
         EditText nt4 = findViewById(R.id.editText11);
 
+    }
+
+    public void sendData(View view) {
+        Intent i = new Intent(getApplicationContext(), UpdateDelete.class);
+        startActivity(i);
     }
 }
