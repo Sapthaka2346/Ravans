@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class contact extends AppCompatActivity {
+public class contactus1 extends AppCompatActivity {
 
     EditText nt1;
     EditText nt2;
@@ -18,7 +17,7 @@ public class contact extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainka);
+        setContentView(R.layout.contactus1);
 
         EditText nt1 = findViewById(R.id.contactName);
         EditText nt2 = findViewById(R.id.editText0);
@@ -28,7 +27,7 @@ public class contact extends AppCompatActivity {
     }
 
     public void sendData(View view) {
-        Intent i = new Intent(getApplicationContext(), UpdateDelete.class);
+        Intent i = new Intent(getApplicationContext(), contactus2.class);
         startActivity(i);
     }
 }

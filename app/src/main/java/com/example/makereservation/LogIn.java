@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
 public class LogIn extends AppCompatActivity {
@@ -33,7 +32,7 @@ public class LogIn extends AppCompatActivity {
 
     public void addDetasils(View v){
 
-        Intent click =new Intent(this,Adddetails.class);
+        Intent click =new Intent(this, Adddetails1.class);
         startActivity(click);
     }
 }

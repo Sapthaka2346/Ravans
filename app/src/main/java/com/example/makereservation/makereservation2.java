@@ -4,11 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 
-public class BookNow extends AppCompatActivity {
+public class makereservation2 extends AppCompatActivity {
 
     Button SUBMIT;
 
@@ -16,14 +15,14 @@ public class BookNow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book_now);
+        setContentView(R.layout.makereservation2);
 
         SUBMIT = (Button) findViewById(R.id.SUBMIT);
 
         SUBMIT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Finish.class);
+                Intent i = new Intent(getApplicationContext(), makereservation3.class);
                 startActivity(i);
             }
         });

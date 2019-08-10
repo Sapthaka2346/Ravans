@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/back1"
-        tools:context=".MainActivity">
+        tools:context=".makereservation1">
 
         <Button
             android:id="@+id/bookNowBtn"

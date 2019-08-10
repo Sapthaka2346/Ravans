@@ -7,12 +7,12 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class UpdateDelete extends AppCompatActivity {
+public class contactus2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update_delete);
+        setContentView(R.layout.contactus2);
 
         EditText nt1 = findViewById(R.id.contactName);
         EditText nt2 = findViewById(R.id.editText0);
@@ -34,7 +34,7 @@ public class UpdateDelete extends AppCompatActivity {
     }
 
     public void onUpdateButtonPushed(View view){
-        Intent update = new Intent(UpdateDelete.this, ViewMessage.class);
+        Intent update = new Intent(contactus2.this, contactus3.class);
         startActivity(update);
     }
 }

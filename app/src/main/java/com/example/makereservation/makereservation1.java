@@ -6,24 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-public class Finish extends AppCompatActivity {
-    Button fin;
+public class makereservation1 extends AppCompatActivity {
+    Button bookNowButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_finish);
+        setContentView(R.layout.makeresrvation1);
 
-        fin = (Button) findViewById(R.id.SUBMIT3);
+        bookNowButton = (Button) findViewById(R.id.bookNowBtn);
 
-        fin.setOnClickListener(new View.OnClickListener() {
+        bookNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(getApplicationContext(),"dsf",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), makereservation2.class);
                 startActivity(i);
             }
+
         });
     }
 }

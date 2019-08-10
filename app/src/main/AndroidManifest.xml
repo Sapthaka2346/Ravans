@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewMessage"></activity>
-        <activity android:name=".AddDetailsEdit" />
-        <activity android:name=".UpdateDelete" />
-        <activity android:name=".Adddetails" />
-        <activity android:name=".check" />
-        <activity android:name=".contact" />
-        <activity android:name=".Room" />
+        <activity android:name=".contactus3"></activity>
+        <activity android:name=".AddDetails2" />
+        <activity android:name=".contactus2" />
+        <activity android:name=".Adddetails1" />
+        <activity android:name=".checkavailability2" />
+        <activity android:name=".contactus1" />
+        <activity android:name=".checkavailability1" />
         <activity android:name=".payment2" />
         <activity android:name=".payment1" />
         <activity android:name=".LogIn">
@@ -26,9 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home" />
-        <activity android:name=".Finish" />
-        <activity android:name=".BookNow" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".makereservation3" />
+        <activity android:name=".makereservation2" />
+        <activity android:name=".makereservation1" />
     </application>
 
 </manifest>
