@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/images2"
+    android:background="@android:color/background_light"
     tools:context=".makereservation2">
 
     <View
@@ -73,22 +73,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.559" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="157dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/download" />
-
     <TextView
         android:id="@+id/textView12"
         android:layout_width="183dp"
@@ -97,7 +81,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#FF9800"
+        android:background="@android:color/holo_blue_dark"
         android:text="@string/paradise_hotel"
         android:textColor="#0A0A0A"
         android:textSize="24sp"
@@ -116,7 +100,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFEB3B"
+        android:background="@android:color/holo_blue_dark"
         android:text="Book Now"
         android:textAlignment="center"
         android:textColor="#0C0B0B"
@@ -136,7 +120,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
-        android:background="#FF9800"
+        android:background="@android:color/holo_blue_dark"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
