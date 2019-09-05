@@ -29,13 +29,13 @@ public class Home extends AppCompatActivity {
 
         });
 
-        payprocces = findViewById(R.id.bookNowBtn7);
+        payprocces = findViewById(R.id.continuebtn);
 
         payprocces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(),payment2.class);
+                Intent intent = new Intent(getApplicationContext(),paymentnew.class);
                 startActivity(intent);
 
             }

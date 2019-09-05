@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-public class payment1 extends AppCompatActivity {
+public class paymentnew extends AppCompatActivity {
 
     Button continuebtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_paymentnew);
 
         continuebtn = findViewById(R.id.continuebtn);
 
@@ -22,11 +21,10 @@ public class payment1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(payment1.this,payment2.class);
+                Intent intent = new Intent(getApplicationContext(),payment2.class);
                 startActivity(intent);
 
             }
         });
-
     }
 }
