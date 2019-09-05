@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class Home extends AppCompatActivity {
     Button Reservation;
     Button pay1, contactBtn;
+    Button payprocces;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +30,21 @@ public class Home extends AppCompatActivity {
 
         });
 
-        contactBtn = (Button) findViewById(R.id.bookNowBtn4);
+        payprocces = findViewById(R.id.bookNowBtn7);
+
+        payprocces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),payment2.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }
     //button on click
-    public void clickv(View v){
-
-            Intent click =new Intent(this,payment1.class);
-            startActivity(click);
-    }
 
     public void clickRooms(View v){
 

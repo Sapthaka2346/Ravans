@@ -7,27 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class payment1 extends AppCompatActivity {
 
-    Button b1;
-
+    Button continuebtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment1);
 
-        b1 = findViewById(R.id.bookNowBtn7);
+        continuebtn = findViewById(R.id.continuebtn);
 
-        Intent n1 = getIntent();
+        continuebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        String s2=((Intent)n1).getStringExtra("First text");
+                Intent intent = new Intent(payment1.this,payment2.class);
+                startActivity(intent);
 
-    }
+            }
+        });
 
-    public void clickv(View v){
-
-        Intent click =new Intent(this,payment2.class);
-        startActivity(click);
     }
 }

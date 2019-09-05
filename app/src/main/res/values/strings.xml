@@ -42,6 +42,21 @@
     <string name="delete">DELETE</string>
     <string name="paradise">PARADISE</string>
     <string name="view_message">View Message</string>
+    <string name="Welcome">Welcome</string>
+    <string name="contonues">Contonues</string>
+    <string name="Card_number">Card_Number</string>
+    <string name="Register">Register</string>
+    <string name="Start">Start</string>
+    <string name="setup_you_re_payment">Setup you\'re Payment</string>
+    <string name="get_start">Get Start</string>
+    <string name="you_are_a_member">You are a member?</string>
+    <string name="register">Register</string>
+    <string name="your_are_not_member">Your are not member?</string>
+    <string name="fill_your_payment_details">Fill Your Payment Details</string>
+    <string name="nice_to_see_you_again">Nice to see you Again!</string>
+    <string name="need_help">Need Help?</string>
+    <string name="proceed_payment">Proceed Payment</string>
+    <string name="name">Name</string>
 
 
 </resources>
