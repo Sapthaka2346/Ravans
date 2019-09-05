@@ -9,27 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".payment1"></activity>
-        <activity android:name=".BookNow" />
-        <activity android:name=".payment3" />
-        <activity android:name=".ViewMessage" />
+        <activity android:name=".ViewMessage"></activity>
         <activity android:name=".AddDetailsEdit" />
         <activity android:name=".UpdateDelete" />
         <activity android:name=".Adddetails" />
         <activity android:name=".check" />
         <activity android:name=".contact" />
         <activity android:name=".Room" />
-        <activity android:name=".LogIn" />
         <activity android:name=".payment2" />
-        <activity android:name=".Finish" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Home">
+        <activity android:name=".payment1" />
+        <activity android:name=".LogIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Finish" />
+        <activity android:name=".BookNow" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

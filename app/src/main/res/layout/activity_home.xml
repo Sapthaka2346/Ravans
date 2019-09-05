@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/back1"
-        tools:context=".MainActivity">
+        tools:context=".makereservation1">
 
         <Button
             android:id="@+id/bookNowBtn"
@@ -100,7 +100,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:background="#FF9800"
-            android:text="@string/book_now"
+            android:text="Rates"
             app:layout_constraintBottom_toTopOf="@+id/bookNowBtn6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

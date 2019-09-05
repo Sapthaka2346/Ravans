@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
     Button Reservation;
@@ -24,7 +23,7 @@ public class Home extends AppCompatActivity {
         Reservation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), makereservation1.class);
                 startActivity(i);
             }
 
@@ -48,12 +47,12 @@ public class Home extends AppCompatActivity {
 
     public void clickRooms(View v){
 
-        Intent click =new Intent(this,Room.class);
+        Intent click =new Intent(this, checkavailability1.class);
         startActivity(click);
     }
 
     public void contactUsClick(View view) {
-        Intent click =new Intent(this,contact.class);
+        Intent click =new Intent(this, contactus1.class);
         startActivity(click);
 
     }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/images2"
     android:textAlignment="center"
-    tools:context=".ViewMessage">
+    tools:context=".contactus3">
 
     <TextView
         android:id="@+id/textView27"

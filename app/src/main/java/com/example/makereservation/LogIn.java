@@ -11,6 +11,9 @@ public class LogIn extends AppCompatActivity {
     Button LOGIN;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getSupportActionBar().hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
@@ -29,7 +32,7 @@ public class LogIn extends AppCompatActivity {
 
     public void addDetasils(View v){
 
-        Intent click =new Intent(this,Adddetails.class);
+        Intent click =new Intent(this, Adddetails1.class);
         startActivity(click);
     }
 }

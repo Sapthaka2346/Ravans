@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Adddetails extends AppCompatActivity {
+public class Adddetails1 extends AppCompatActivity {
 
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adddetails);
+        setContentView(R.layout.adddetails1);
 
         button =(Button) findViewById(R.id.button10);
         button.setOnClickListener(new View.OnClickListener(){
@@ -25,7 +25,7 @@ public class Adddetails extends AppCompatActivity {
     }
 
     public void openActivity2() {
-        Intent intent = new Intent(this, AddDetailsEdit.class);
+        Intent intent = new Intent(this, AddDetails2.class);
         startActivity(intent);
     }
 }
