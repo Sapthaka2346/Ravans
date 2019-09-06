@@ -37,7 +37,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:background="#FF9800"
-            android:onClick="clickv"
+
             android:text="@string/payment"
             app:layout_constraintBottom_toTopOf="@+id/bookNowBtn"
             app:layout_constraintEnd_toEndOf="parent"

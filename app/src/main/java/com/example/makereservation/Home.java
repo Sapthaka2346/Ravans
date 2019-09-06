@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
     Button Reservation;
-    Button pay1, contactBtn;
-    Button payprocces;
+  //  Button pay1, contactBtn;
+//    Button payprocces;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,17 +29,17 @@ public class Home extends AppCompatActivity {
 
         });
 
-        payprocces = findViewById(R.id.continuebtn);
-
-        payprocces.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(getApplicationContext(),paymentnew.class);
-                startActivity(intent);
-
-            }
-        });
+//        payprocces = findViewById(R.id.continuebtn);
+//
+//        payprocces.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent intent = new Intent(getApplicationContext(),paymentnew.class);
+//                startActivity(intent);
+//
+//            }
+//        });
 
 
     }
@@ -56,4 +56,6 @@ public class Home extends AppCompatActivity {
         startActivity(click);
 
     }
+
+
 }
