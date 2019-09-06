@@ -33,7 +33,7 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#00131212"
         android:textColorHint="#F80F0E0E"
         app:layout_constraintBottom_toTopOf="@+id/contactEmail"
