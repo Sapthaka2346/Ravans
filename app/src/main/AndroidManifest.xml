@@ -19,6 +19,10 @@
         <activity android:name=".makereservation1" />
         <activity android:name=".makereservation2" />
         <activity android:name=".makereservation3" />
+        <activity android:name=".Adddetails1" />
+        <activity android:name=".AddDetails2" />
+
+
 
         <!--<activity android:name=".paymentnew">-->
             <!--<intent-filter>-->

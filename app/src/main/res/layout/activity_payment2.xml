@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.959" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ci"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/co"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/ch"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/ad"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
