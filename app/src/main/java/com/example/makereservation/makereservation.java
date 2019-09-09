@@ -10,6 +10,27 @@ public class makereservation {
     public makereservation() {
     }
 
+    public static void setname(String trim) {
+    }
+
+    public static void setaddress(String trim) {
+    }
+
+    public static void setcheckin(String trim) {
+    }
+
+    public static void setcheckout(String trim) {
+    }
+
+    public static void setrooms(String trim) {
+    }
+
+    public static void setcontact(String trim) {
+    }
+
+    public static void setcontact(int parseInt) {
+    }
+
     public String getFullName() {
         return FullName;
     }
@@ -48,5 +69,11 @@ public class makereservation {
 
     public void setChekout(String chekout) {
         this.chekout = chekout;
+    }
+
+    public static void setrooms(int parseInt) {
+    }
+
+    public static void setnic(String trim) {
     }
 }
