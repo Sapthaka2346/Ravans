@@ -23,6 +23,7 @@ public class contactus2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contactus2);
 
+        final EditText nt0 = findViewById(R.id.txt1);
        final EditText nt1 = findViewById(R.id.contactName);
        final EditText nt2 = findViewById(R.id.editText0);
        final EditText nt3 = findViewById(R.id.editText10);
@@ -41,12 +42,16 @@ public class contactus2 extends AppCompatActivity {
         nt4.setText(s4);
 
         Button viw = findViewById(R.id.button14);
-        final EditText t1 = findViewById(R.id.txt);
+        final Button upd = findViewById(R.id.button2);
+       final Button del = findViewById(R.id.button3);
+        //final EditText nt2 = findViewById(R.id.editText0);
+
+        //final EditText t1 = findViewById(R.id.txt1);
 
         viw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("cnt").child(t1.getText().toString());
+                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Contact Us").child(nt0.getText().toString());
                 readRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -55,7 +60,9 @@ public class contactus2 extends AppCompatActivity {
                             nt2.setText(dataSnapshot.child("contactEmail").getValue().toString());
                             nt3.setText(dataSnapshot.child("contactPhone").getValue().toString());
                             nt4.setText(dataSnapshot.child("contactMessage").getValue().toString());
+
                             Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_LONG).show();
+
 
                         }
                         else{
@@ -67,19 +74,100 @@ public class contactus2 extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
-                } );{
+                } );
 
-                };
+                upd.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        FirebaseDatabase.getInstance().getReference().child("cnt");
 
+                DatabaseReference upRef = FirebaseDatabase.getInstance().getReference().child("Contact Us");
+                upRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                            cnt ct =new cnt();
+
+                        if(dataSnapshot.hasChild(nt0.getText().toString().trim())) {
+                            try {
+//                                ct.setContactName(nt1.getText().toString().trim());
+//                                ct.setContactEmail(nt2.getText().toString().trim());
+//                                ct.setContactPhone(nt3.getText().toString().trim());
+                                ct.setContactMessage(nt4.getText().toString().trim());
+
+                                DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("Contact Us").child(nt0.getText().toString());
+                                dbRef.setValue(ct);
+                              //  clearControls();
+                                Toast.makeText(getApplicationContext(), "Data update successfully!", Toast.LENGTH_SHORT).show();
+
+                            } catch (NumberFormatException e) {
+                                Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_SHORT).show();
+
+                            }
+                        }
+
+                            else
+                                Toast.makeText(getApplicationContext(),"No source to update",Toast.LENGTH_SHORT).show();
+                            }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+                del.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        DatabaseReference delRef =  FirebaseDatabase.getInstance().getReference().child("Contact Us");
+
+                        delRef.addListenerForSingleValueEvent((new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                if(dataSnapshot.hasChild(nt1.getText().toString())){
+                                    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("Contact Us").child(nt1.getText().toString());
+
+                                        dbRef.removeValue();
+
+                                        Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_SHORT).show();
+
+                                }
+                                else{
+                                    Toast.makeText(getApplicationContext(),"No Source to Delete",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        }));
+                    }
+                });
+
+
+                    }
+        });
+
+                {
+
+
+    }
             }
-        }); {
+        });
 
-    }
 
- //    public void onUpdateButtonPush(View view ){
-   //     Intent update = new Intent(contactus2.this, contactus3.class);
+
+
+
+   //  public void onUpdateButtonPush(View viw ){
+    //   Intent update = new Intent(contactus2.this, contactus3.class);
     //    startActivity(update);
-    //}
+   // }
+
 
     }
+
+
 }
+
+

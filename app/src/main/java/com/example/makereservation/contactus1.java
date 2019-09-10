@@ -46,7 +46,7 @@ public class contactus1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Contatct Us");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Contact Us");
 
                 try {
                     if (TextUtils.isEmpty(contactName.getText().toString()))
@@ -63,8 +63,8 @@ public class contactus1 extends AppCompatActivity {
                         ct.setContactPhone(contactPhone.getText().toString().trim());
                         ct.setContactMessage(contactMessage.getText().toString().trim());
 
-                        dbRef.push().setValue(ct);
-
+                        //dbRef.push().setValue(ct);
+                        dbRef.child(contactName.getText().toString().trim()).setValue(ct);
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
                         Intent i = new Intent(getApplicationContext(), contactus2.class);
