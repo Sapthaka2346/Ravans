@@ -30,8 +30,8 @@ public class contactus1 extends AppCompatActivity {
 
         EditText nt1 = findViewById(R.id.contactName);
         EditText nt2 = findViewById(R.id.editText0);
-        EditText nt3 = findViewById(R.id.editText10);
-        EditText nt4 = findViewById(R.id.editText11);
+        EditText nt3 = findViewById(R.id.textaddress);
+        EditText nt4 = findViewById(R.id.textrooms);
 
         contactName = findViewById(R.id.contactName);
         contactEmail = findViewById(R.id.contactEmail);

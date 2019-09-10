@@ -5,7 +5,9 @@ public class makereservation {
     private String Address;
     private int Contactnumber;
     private String checkin;
-    private String chekout;
+    private String checkout;
+    private String nic;
+    private int rooms;
 
     public makereservation() {
     }
@@ -42,11 +44,27 @@ public class makereservation {
         this.checkin = checkin;
     }
 
-    public String getChekout() {
-        return chekout;
+    public String getCheckout() {
+        return checkout;
     }
 
-    public void setChekout(String chekout) {
-        this.chekout = chekout;
+    public void setCheckout(String checkout) {
+        this.checkout = checkout;
+    }
+
+    public String getNic() {
+        return nic;
+    }
+
+    public void setNic(String nic) {
+        this.nic = nic;
+    }
+
+    public int getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(int rooms) {
+        this.rooms = rooms;
     }
 }

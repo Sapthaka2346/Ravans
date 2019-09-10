@@ -23,11 +23,18 @@ public class contactus2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contactus2);
 
+//        EditText nt1 = findViewById(R.id.contactName);
+//        EditText nt2 = findViewById(R.id.editText0);
+//        EditText nt3 = findViewById(R.id.textaddress);
+//        EditText nt4 = findViewById(R.id.textrooms);
+
         final EditText nt0 = findViewById(R.id.txt1);
        final EditText nt1 = findViewById(R.id.contactName);
        final EditText nt2 = findViewById(R.id.editText0);
-       final EditText nt3 = findViewById(R.id.editText10);
-       final EditText nt4 = findViewById(R.id.editText11);
+       final EditText nt3 = findViewById(R.id.textaddress);
+       final EditText nt4 = findViewById(R.id.textrooms);
+
+
 
         Intent intent2 = getIntent();
 
