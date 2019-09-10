@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.snapshot.Index;
 
 public class contactus1 extends AppCompatActivity {
 
@@ -38,7 +37,7 @@ public class contactus1 extends AppCompatActivity {
         contactPhone = findViewById(R.id.contactPhone);
         contactMessage = findViewById(R.id.contactMessage);
 
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.insertbtn);
 
 
         final cnt ct = new cnt();

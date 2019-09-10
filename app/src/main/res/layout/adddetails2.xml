@@ -36,7 +36,7 @@
     ]]>
 
     <EditText
-        android:id="@+id/textcontact"
+        android:id="@+id/Cv"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.415" />
 
     <EditText
-        android:id="@+id/ad"
+        android:id="@+id/Nam"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -120,7 +120,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <EditText
-        android:id="@+id/ch"
+        android:id="@+id/Ed"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="72dp"

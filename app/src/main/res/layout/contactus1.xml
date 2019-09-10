@@ -109,14 +109,14 @@
         android:hint="type your message here"
         android:inputType="textPersonName"
         android:textColorHint="#99050505"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/insertbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/insertbtn"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
