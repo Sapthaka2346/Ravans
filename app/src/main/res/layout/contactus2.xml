@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.298" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/textaddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.557" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/textrooms"
         android:layout_width="0dp"
         android:layout_height="115dp"
         android:layout_marginStart="12dp"

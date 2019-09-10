@@ -60,7 +60,7 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/co"
+        android:id="@+id/textcontact"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"

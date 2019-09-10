@@ -33,7 +33,7 @@ public class makereservation2 extends AppCompatActivity {
         txtcheckout=findViewById(R.id.txtcheckout);
         txtnic=findViewById(R.id.txtnic);
         txtrooms=findViewById(R.id.txtrooms);
-        txtcheckout=findViewById(R.id.txtcheckout);
+
 
 
 
@@ -43,8 +43,7 @@ public class makereservation2 extends AppCompatActivity {
         SUBMIT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //Intent i = new Intent(getApplicationContext(), makereservation3.class);
-               // startActivity(i);
+
 
                 //Insert Code
 
@@ -71,23 +70,41 @@ public class makereservation2 extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Please enter your Check-Out date", Toast.LENGTH_LONG).show();
                             else{
 
+                                makereservation.setCheckin(txtrooms.getText().toString().trim());
+                                makereservation.setCheckin(txtcontact.getText().toString().trim());
                                 makereservation.setCheckin(txtcheckin.getText().toString().trim());
-                                makereservation.setnic(txtnic.getText().toString().trim());
-                                makereservation.setChekout(txtcheckout.getText().toString().trim());
+                                makereservation.setNic(txtnic.getText().toString().trim());
+                                makereservation.setCheckout(txtcheckout.getText().toString().trim());
                                 makereservation.setFullName(txtname.getText().toString().trim());
                                 makereservation.setAddress(txtaddress.getText().toString().trim());
-                                makereservation.setContactnumber(Integer.parseInt(txtcontact.getText().toString().trim()));
-                                makereservation.setrooms(Integer.parseInt(txtrooms.getText().toString().trim()));
 
-                                dbRef.push().setValue(makereservation);
+                                try{
+                                    makereservation.setContactnumber(Integer.parseInt(txtcontact.getText().toString().trim()));
+                                }catch (NumberFormatException ex1){
+                                    Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_LONG).show();
+                                }
+
+                                try{
+                                    makereservation.setRooms(Integer.parseInt(txtrooms.getText().toString().trim()));
+                                }catch(NumberFormatException e2){
+                                    Toast.makeText(getApplicationContext(), "Invalid Room Type", Toast.LENGTH_LONG).show();
+                                }
+
+
+                                dbRef.child(makereservation.getNic()).setValue(makereservation);
 
                                 Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_LONG).show();
                                 clearControls();
+
+                               Intent i = new Intent(getApplicationContext(), makereservation4.class);
+                                startActivity(i);
                             }
 
 
-                        } catch (NumberFormatException e) {
-                            Toast.makeText(getApplicationContext(), "Invalid Contact Number", Toast.LENGTH_LONG).show(); }
+                        } catch (Exception e1) {
+                            Toast.makeText(getApplicationContext(), "Error"+e1, Toast.LENGTH_LONG).show();
+                        }
+
                     }
                 });
             }
