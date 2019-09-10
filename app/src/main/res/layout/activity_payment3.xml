@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/Cno"
+        android:id="@+id/CnoID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -55,10 +55,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/RegID" />
 
     <EditText
-        android:id="@+id/Cv"
+        android:id="@+id/CvcID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -72,10 +72,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nam" />
+        app:layout_constraintTop_toBottomOf="@+id/NamID" />
 
     <EditText
-        android:id="@+id/Ed"
+        android:id="@+id/EdayID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -90,11 +90,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Cv"
+        app:layout_constraintTop_toBottomOf="@+id/CvcID"
         app:layout_constraintVertical_bias="0.08" />
 
     <EditText
-        android:id="@+id/Nam"
+        android:id="@+id/NamID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Cno" />
+        app:layout_constraintTop_toBottomOf="@+id/CnoID" />
 
     <Button
         android:id="@+id/Update"
@@ -189,7 +189,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/RegID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
@@ -204,7 +204,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Viewbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View"

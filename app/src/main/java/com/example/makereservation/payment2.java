@@ -22,10 +22,10 @@ public class payment2 extends AppCompatActivity {
         setContentView(R.layout.activity_payment2);
 
         final EditText nt1 = findViewById(R.id.Rid);
-        final EditText nt2 = findViewById(R.id.Cno);
-        final EditText nt3 = findViewById(R.id.Nam);
-        final EditText nt4 = findViewById(R.id.Cv);
-        final EditText nt5 = findViewById(R.id.Ed);
+        final EditText nt2 = findViewById(R.id.CnoID);
+        final EditText nt3 = findViewById(R.id.NamID);
+        final EditText nt4 = findViewById(R.id.CvcID);
+        final EditText nt5 = findViewById(R.id.EdayID);
 
         Button btn1 = findViewById(R.id.insertbtn);
 

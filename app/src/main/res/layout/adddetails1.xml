@@ -9,7 +9,7 @@
     >
 
     <EditText
-        android:id="@+id/Cno"
+        android:id="@+id/CnoID"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.268" />
 
     <EditText
-        android:id="@+id/Cv"
+        android:id="@+id/CvcID"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <EditText
-        android:id="@+id/Nam"
+        android:id="@+id/NamID"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -125,7 +125,7 @@
         app:layout_constraintVertical_bias="0.616" />
 
     <EditText
-        android:id="@+id/Ed"
+        android:id="@+id/EdayID"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="72dp"
@@ -141,7 +141,7 @@
         app:layout_constraintVertical_bias="0.729" />
 
     <EditText
-        android:id="@+id/Cv"
+        android:id="@+id/CvcID"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="72dp"

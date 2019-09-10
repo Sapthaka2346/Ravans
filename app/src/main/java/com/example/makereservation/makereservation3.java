@@ -33,7 +33,7 @@ public class makereservation3 extends AppCompatActivity {
 
           t1 = findViewById(R.id.textnic);
           t2 = findViewById(R.id.textfullname);
-          t3 = findViewById(R.id.Cv);
+          t3 = findViewById(R.id.CvcID);
           t4 = findViewById(R.id.textaddress);
           t5 = findViewById(R.id.textcheckin);
           t6 = findViewById(R.id.textcheckout);

@@ -1,6 +1,6 @@
 package com.example.makereservation;
 
-public class payment {
+public class payment{
 
     private String Rid;
     private String Cno;
