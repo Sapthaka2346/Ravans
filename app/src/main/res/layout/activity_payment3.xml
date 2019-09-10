@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.988" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ci"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/textcontact"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -77,7 +77,7 @@
 
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/ch"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.064" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/ad"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"

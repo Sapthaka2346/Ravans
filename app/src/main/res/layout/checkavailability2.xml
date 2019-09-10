@@ -8,7 +8,7 @@
     android:background="@drawable/ww">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ci"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.246" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/textcontact"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/ad"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="0.522" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/ch"
         android:layout_width="178dp"
         android:layout_height="42dp"
         android:layout_marginStart="72dp"
@@ -155,7 +155,7 @@
         app:layout_constraintVertical_bias="0.66" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

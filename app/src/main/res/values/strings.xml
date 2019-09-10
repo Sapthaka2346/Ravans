@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Hotel Reservation</string>
     <string name="check_in">Check-In</string>
     <string name="check_out">Check-Out</string>
@@ -57,6 +57,12 @@
     <string name="need_help">Need Help?</string>
     <string name="proceed_payment">Proceed Payment</string>
     <string name="name">Name</string>
+    <string name="show">SHOW</string>
+    <string name="nic">NIC</string>
+    <string name="checkout">CheckOut</string>
+
+    <string name="contactnumber">ContactNumber</string>
+    <string name="checkin">CheckIn</string>
 
 
 </resources>

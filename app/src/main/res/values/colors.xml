@@ -11,4 +11,7 @@
     <color name="purpel">#BC1FF9</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorTransParentwhite">#CCCCCC</color>
+    <!--<string name="full_name">Full Name</string>-->
+
+    <string name="todo">TODO</string>
 </resources>
