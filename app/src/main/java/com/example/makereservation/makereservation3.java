@@ -77,7 +77,8 @@ public class makereservation3 extends AppCompatActivity {
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                                Intent i = new Intent(getApplicationContext(), makereservation4.class);
+                                startActivity(i);
                             }
                         });
 
@@ -150,6 +151,9 @@ public class makereservation3 extends AppCompatActivity {
                                          }else{
                                              Toast.makeText(getApplicationContext(),"No Source to Delete",Toast.LENGTH_SHORT).show();
                                          }
+
+                                         Intent i = new Intent(getApplicationContext(), makereservation4.class);
+                                         startActivity(i);
 
                                      }
 
