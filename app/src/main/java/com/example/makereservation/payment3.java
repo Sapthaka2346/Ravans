@@ -44,10 +44,12 @@ public class payment3 extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                         if (dataSnapshot.hasChildren()) {
-                            t2.setText(dataSnapshot.child("Cno11").getValue().toString());
-                            t3.setText(dataSnapshot.child("Nam1").getValue().toString());
-                            t4.setText(dataSnapshot.child("Cvc1").getValue().toString());
-                            t5.setText(dataSnapshot.child("exday1").getValue().toString());
+                            t2.setText(dataSnapshot.child("cno").getValue().toString());
+                           t3.setText(dataSnapshot.child("nam").getValue().toString());
+                           t4.setText(dataSnapshot.child("cvc").getValue().toString());
+                           t5.setText(dataSnapshot.child("exday").getValue().toString());
+                            Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+
 
                         } else {
                             Toast.makeText(getApplicationContext(), "No source to display", Toast.LENGTH_SHORT).show();
