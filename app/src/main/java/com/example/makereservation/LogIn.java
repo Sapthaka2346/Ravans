@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class LogIn extends AppCompatActivity {
     Button LOGIN;
+    Button btnlogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -18,9 +19,9 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
 
-      LOGIN = (Button) findViewById(R.id.userloginbtn);
+      btnlogin = (Button) findViewById(R.id.btnlogin);
 
-        LOGIN.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Home.class);
@@ -28,6 +29,7 @@ public class LogIn extends AppCompatActivity {
             }
 
         });
+
     }
 
     public void addDetasils(View v){
