@@ -63,6 +63,9 @@
 
     <string name="contactnumber">ContactNumber</string>
     <string name="checkin">CheckIn</string>
+    <string name="Rates">Rates</string>
+    <string name="top">There is Only One Boss.The Guest</string>
+    <string name="Location">Location</string>
 
 
 </resources>
