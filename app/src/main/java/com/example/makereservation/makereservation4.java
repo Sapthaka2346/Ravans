@@ -11,6 +11,7 @@ public class makereservation4 extends AppCompatActivity {
 
     private Button InsertButton;
     private Button DeleteorUpdateButton;
+    private Button HomeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class makereservation4 extends AppCompatActivity {
 
         InsertButton = (Button) findViewById(R.id.btninsert);
         DeleteorUpdateButton = (Button) findViewById(R.id.btndelorup);
+        HomeButton = (Button) findViewById(R.id.btnhome);
 
         InsertButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,14 @@ public class makereservation4 extends AppCompatActivity {
             }
 
 
+        });
+        HomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Home.class);
+                startActivity(i);
+
+            }
         });
     }
 }
