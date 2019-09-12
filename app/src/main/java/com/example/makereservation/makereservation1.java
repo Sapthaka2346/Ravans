@@ -22,7 +22,7 @@ public class makereservation1 extends AppCompatActivity {
         bookNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), makereservation2.class);
+                Intent i = new Intent(getApplicationContext(), makereservation4.class);
                 startActivity(i);
             }
 

@@ -35,11 +35,11 @@ public class Adddetails1 extends AppCompatActivity {
         });
 
         txtRoomtype = findViewById(R.id.rt);
-        txtCheckin = findViewById(R.id.ci);
-        txtCheckOut = findViewById(R.id.co);
-        txtAdult = findViewById(R.id.ad);
-        txtChild = findViewById(R.id.ch);
-        txtCost = findViewById(R.id.co);
+        txtCheckin = findViewById(R.id.CnoID);
+        txtCheckOut = findViewById(R.id.CvcID);
+        txtAdult = findViewById(R.id.NamID);
+        txtChild = findViewById(R.id.EdayID);
+        txtCost = findViewById(R.id.CvcID);
 
         btnAdd = findViewById(R.id.btnadd);
 

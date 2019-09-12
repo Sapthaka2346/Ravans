@@ -9,10 +9,9 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="186dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif"
         android:text="@string/your_are_not_member"
@@ -20,15 +19,14 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.75" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="101dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/Register"
@@ -38,84 +36,82 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.642" />
 
     <EditText
-        android:id="@+id/ci"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="224dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/inputfield"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Card_number"
-        android:textColorHint="@color/Darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/co"
+        android:id="@+id/CnoID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CVC"
-        android:textColorHint="@color/Darkblue"
+        android:autofillHints=""
         android:background="@drawable/inputfield"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Darkblue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/Rid" />
 
     <EditText
-        android:id="@+id/ch"
+        android:id="@+id/CvcID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/inputfield"
         android:ems="10"
+        android:hint="CVC"
         android:inputType="textPersonName"
-        android:text="Expiration_Date"
         android:textColorHint="@color/Darkblue"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintTop_toBottomOf="@+id/NamID" />
 
     <EditText
-        android:id="@+id/ad"
+        android:id="@+id/EdayID"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textColorHint="@color/Darkblue"
         android:background="@drawable/inputfield"
+        android:ems="10"
+        android:hint="Expiration date"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintTop_toBottomOf="@+id/CvcID"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <EditText
+        android:id="@+id/NamID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/inputfield"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Darkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CnoID" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/insertbtn"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -129,8 +125,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintTop_toBottomOf="@+id/EdayID"
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/textView8"
@@ -144,9 +140,10 @@
         android:textColor="@color/purpel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/insertbtn"
+        app:layout_constraintVertical_bias="0.32" />
 
     <TextView
         android:id="@+id/textView11"
@@ -202,5 +199,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223" />
+
+    <EditText
+        android:id="@+id/Rid"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/inputfield"
+        android:ems="10"
+        android:hint="Registration ID"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Darkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

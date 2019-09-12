@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@drawable/backgroundhome"
     tools:context=".makereservation3">
 
     <TextView
@@ -24,34 +24,34 @@
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintVertical_bias="0.785" />
 
     <Button
-        android:id="@+id/SUBMIT2"
+        android:id="@+id/btndelete"
         android:layout_width="154dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@drawable/button"
         android:text="@string/delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toEndOf="@+id/SUBMIT3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnupdate"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.966" />
 
     <Button
-        android:id="@+id/SUBMIT3"
+        android:id="@+id/btnupdate"
         android:layout_width="154dp"
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@drawable/button"
         android:text="@string/update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Check-Out"
+        android:text="@string/check_out"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.697" />
 
     <EditText
-        android:id="@+id/co"
+        android:id="@+id/CvcID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -112,7 +112,7 @@
         app:layout_constraintVertical_bias="0.426" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/textaddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/textrooms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -146,7 +146,7 @@
         app:layout_constraintVertical_bias="0.783" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/textcheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -163,7 +163,7 @@
         app:layout_constraintVertical_bias="0.695" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/textcheckin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -197,7 +197,7 @@
         app:layout_constraintVertical_bias="0.346" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/textnic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -211,10 +211,10 @@
         app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <EditText
-        android:id="@+id/ad"
+        android:id="@+id/textfullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -263,6 +263,25 @@
 
     <TextView
         android:id="@+id/textView21"
+        android:layout_width="118dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="NIC"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/textView18"
         android:layout_width="118dp"
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
@@ -318,59 +337,40 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.514" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="208dp"
-        android:layout_height="42dp"
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="@string/book_now"
-        android:textAlignment="center"
-        android:textColor="#0C0B0B"
-        android:textSize="18sp"
+        android:background="@drawable/button"
+        android:text="SHOW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.118" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="157dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/download" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="183dp"
+    <EditText
+        android:id="@+id/txtsearch"
+        android:layout_width="260dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="@string/paradise_hotel"
-        android:textColor="#0A0A0A"
-        android:textSize="24sp"
+        android:background="@color/colorTransParentwhite"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintVertical_bias="0.117" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

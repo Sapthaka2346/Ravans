@@ -5,10 +5,13 @@
     <color name="colorAccent">#C590A3</color>
 
 
-    <color name="Darkblue">#1B1063</color>
+    <color name="Darkblue">#000000</color>
     <color name="white">#F5F9F9</color>
     <color name="light_gray">#E8EBEC</color>
     <color name="purpel">#BC1FF9</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorTransParentwhite">#CCCCCC</color>
+    <!--<string name="full_name">Full Name</string>-->
+
+    <string name="todo">TODO</string>
 </resources>

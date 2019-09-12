@@ -18,7 +18,7 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
 
-      LOGIN = (Button) findViewById(R.id.Loginbtn);
+      LOGIN = (Button) findViewById(R.id.userloginbtn);
 
         LOGIN.setOnClickListener(new View.OnClickListener() {
             @Override
