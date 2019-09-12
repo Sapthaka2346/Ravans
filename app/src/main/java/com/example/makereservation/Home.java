@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
 
         public void Resavation(View view)
         {
-            Intent i1 = new Intent (Home.this,makereservation.class);
+            Intent i1 = new Intent (Home.this,makereservation1.class);
             startActivity(i1);
         }
 
