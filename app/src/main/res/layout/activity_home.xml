@@ -24,15 +24,14 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#fffffc"
-                >
+                android:background="@drawable/backgroundhome">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:orientation="vertical"
+                    android:background="@drawable/back"
                     android:gravity="center"
-                    android:background = "@drawable/back"
+                    android:orientation="vertical"
 
 
                     >
@@ -59,27 +58,28 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="230dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="230dp"
                     android:layout_marginRight="10dp"
+                    android:orientation="vertical"
 
                     >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
-                        android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
 
                         >
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -89,22 +89,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi1"
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
-                                    android:id="@+id/dashbordi1"
-                                    android:src="@drawable/res1"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/res1"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/reservation"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi1"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/reservation"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -112,7 +113,7 @@
                                     android:id="@+id/Reservation"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
+                                    android:background="@drawable/border"
                                     android:onClick="Resavation" />
 
                             </RelativeLayout>
@@ -122,10 +123,10 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -135,22 +136,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi2"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:id="@+id/dashbordi2"
-                                    android:src="@drawable/room1"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/room1"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/rooms"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi2"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/rooms"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -158,13 +160,11 @@
                                     android:id="@+id/bookNowBtn6"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
+                                    android:background="@drawable/border" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
-
 
 
                     </LinearLayout>
@@ -172,17 +172,18 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
-                        android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
 
                         >
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -192,22 +193,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi3"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:id="@+id/dashbordi3"
-                                    android:src="@drawable/contact"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/contact"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/contact_us"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi3"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/contact_us"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -215,7 +217,7 @@
                                     android:id="@+id/bookNowBtn4"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
+                                    android:background="@drawable/border"
                                     android:onClick="contact" />
 
                             </RelativeLayout>
@@ -225,10 +227,10 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -238,22 +240,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi4"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:id="@+id/dashbordi4"
-                                    android:src="@drawable/payment"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/payment"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/payment"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi4"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/payment"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -261,7 +264,7 @@
                                     android:id="@+id/bookNowBtn7"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
+                                    android:background="@drawable/border"
                                     android:onClick="Payment" />
 
                             </RelativeLayout>
@@ -269,24 +272,23 @@
                         </androidx.cardview.widget.CardView>
 
 
-
-
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
-                        android:orientation="horizontal"
                         android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
 
                         >
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -296,22 +298,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi5"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:id="@+id/dashbordi5"
-                                    android:src="@drawable/location"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/location"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/Location"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi5"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/Location"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -319,7 +322,7 @@
                                     android:id="@+id/buttonitem"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
+                                    android:background="@drawable/border" />
 
                             </RelativeLayout>
 
@@ -328,10 +331,10 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginRight="5dp"
 
 
                             >
@@ -341,22 +344,23 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
+                                    android:id="@+id/dashbordi6"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:id="@+id/dashbordi6"
-                                    android:src="@drawable/gallery"
                                     android:layout_centerInParent="true"
+                                    android:src="@drawable/gallery"
 
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/gallery"
-                                    android:textSize="18dp"
                                     android:layout_below="@+id/dashbordi6"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:text="@string/gallery"
+                                    android:textSize="18dp"
 
                                     />
 
@@ -364,13 +368,11 @@
                                     android:id="@+id/buttoncus"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
+                                    android:background="@drawable/border" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
-
 
 
                     </LinearLayout>

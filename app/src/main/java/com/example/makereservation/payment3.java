@@ -3,6 +3,7 @@ package com.example.makereservation;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
@@ -33,7 +34,7 @@ public class payment3 extends AppCompatActivity {
         Button btnUpdate = findViewById(R.id.Update);
         Button btnDelete = findViewById(R.id.Delete);
 
-        //Inset Method//
+        //View Method//
 
         btnView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,9 @@ public class payment3 extends AppCompatActivity {
 
                         } else {
                             Toast.makeText(getApplicationContext(), "No source to display", Toast.LENGTH_SHORT).show();
+
+                            Intent myac = new Intent(getApplicationContext(),paymentAccount.class);
+                            startActivity(myac);
                         }
                     }
                     @Override
@@ -82,7 +86,7 @@ public class payment3 extends AppCompatActivity {
                             ft.setCvc(t4.getText().toString());
                             ft.setExday(t5.getText().toString());
 
-                            DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("payment").child(t2.getText().toString());
+                            DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("payment").child(t1.getText().toString());
                             dbRef.setValue(ft);
 
                             Toast.makeText(getApplicationContext(),"Data Update Successfully!",Toast.LENGTH_SHORT).show();
@@ -126,6 +130,12 @@ public class payment3 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void ac(View view){
+
+        Intent ac1 = new Intent(getApplicationContext(), paymentAccount.class);
+        startActivity(ac1);
 
     }
 }

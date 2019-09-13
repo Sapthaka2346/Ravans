@@ -6,8 +6,11 @@ import android.content.Intent;
 import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.jar.Attributes;
@@ -15,6 +18,7 @@ import java.util.jar.Attributes;
 import static android.text.TextUtils.isEmpty;
 
 public class LogIn extends AppCompatActivity {
+
     private EditText passwordtxt;
     private EditText usernametxt;
     Button btnlogin;
@@ -28,10 +32,12 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
 
-        btnlogin = (Button) findViewById(R.id.btnlogin);
-        adminloginbtn = (Button) findViewById(R.id.adminloginbtn);
-        passwordtxt = (EditText) findViewById(R.id.passwordtxt);
-        usernametxt = (EditText) findViewById(R.id.usernametxt);
+      btnlogin = (Button) findViewById(R.id.btnlogin);
+      adminloginbtn = (Button) findViewById(R.id.adminloginbtn);
+      passwordtxt = (EditText) findViewById(R.id.passwordtxt);
+      usernametxt = (EditText) findViewById(R.id.usernametxt);
+
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,19 +67,17 @@ public class LogIn extends AppCompatActivity {
         adminloginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Adddetails1.class);
+                Intent i = new Intent(getApplicationContext(), Addddmiiiinnn.class);
                 startActivity(i);
             }
         });
 
     }
 
+
+
     private static void setEnabled(boolean b) {
     }
 
-    public void addDetasils(View v) {
 
-        Intent click = new Intent(this, Adddetails1.class);
-        startActivity(click);
-    }
 }

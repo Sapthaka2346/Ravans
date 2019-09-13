@@ -3,6 +3,7 @@ package com.example.makereservation;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +14,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Pattern;
+
 public class contactus1 extends AppCompatActivity {
+
+  
 
     EditText nt1;
     EditText nt2;
@@ -42,6 +47,9 @@ public class contactus1 extends AppCompatActivity {
 
         final cnt ct = new cnt();
 
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,6 +62,7 @@ public class contactus1 extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Please enter an Email", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(contactPhone.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter a phone number", Toast.LENGTH_SHORT).show();
+
                     else if (TextUtils.isEmpty(contactMessage.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter a Message", Toast.LENGTH_LONG).show();
                     else {

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Addddmiiiinnn"></activity>
         <activity android:name=".paymentAccount" /> <!-- <activity android:name=".LogIn"></activity> -->
         <activity android:name=".payment3" />
         <activity android:name=".payment2" />
@@ -24,10 +25,7 @@
         <activity android:name=".contactus2" />
         <activity android:name=".contactus3" /> <!-- <activity android:name=".paymentnew"> -->
         <activity android:name=".Adddetails1" />
-        <activity android:name=".AddDetails2" />
-
-
-        <!-- <intent-filter> -->
+        <activity android:name=".AddDetails2" /> <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
