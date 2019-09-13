@@ -10,12 +10,28 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Home extends AppCompatActivity {
 
     Button send;
+    private Button bookNowBtn6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        bookNowBtn6 = (Button) findViewById(R.id.bookNowBtn6);
+
+        bookNowBtn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opencheckavailable1();
+            }
+        });
+
     }
+    public void opencheckavailable1(){
+        Intent intent = new Intent(this, checkavailability1.class);
+        startActivity(intent);
+    }
+
 
         public void Resavation(View view)
         {
@@ -30,11 +46,11 @@ public class Home extends AppCompatActivity {
         }
 
 
-     //   public void room(View view)
-     //   {
-     //       Intent i1 = new Intent (Home.this,.class);
-     //       startActivity(i1);
-    //}
+       public void room(View view)
+      {
+           Intent i1 = new Intent (Home.this,checkavailability1.class);
+           startActivity(i1);
+    }
 
         public void contact(View view)
         {
