@@ -112,7 +112,7 @@
                                     android:id="@+id/Reservation"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
                                     android:onClick="Resavation" />
 
                             </RelativeLayout>
@@ -158,7 +158,7 @@
                                     android:id="@+id/bookNowBtn6"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent" />
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
 
                             </RelativeLayout>
 
@@ -215,7 +215,7 @@
                                     android:id="@+id/bookNowBtn4"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
                                     android:onClick="contact" />
 
                             </RelativeLayout>
@@ -261,7 +261,7 @@
                                     android:id="@+id/bookNowBtn7"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled"
                                     android:onClick="Payment" />
 
                             </RelativeLayout>
@@ -319,7 +319,7 @@
                                     android:id="@+id/buttonitem"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent" />
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
 
                             </RelativeLayout>
 
@@ -364,8 +364,7 @@
                                     android:id="@+id/buttoncus"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
-                                     />
+                                    android:background="@color/common_google_signin_btn_text_dark_disabled" />
 
                             </RelativeLayout>
 
