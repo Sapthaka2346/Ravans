@@ -38,12 +38,12 @@ public class makereservation3 extends AppCompatActivity {
           t5 = findViewById(R.id.textcheckin);
           t6 = findViewById(R.id.textcheckout);
           t7 = findViewById(R.id.textrooms);
-          t8= findViewById(R.id.txtsearch);
+          t8 = findViewById(R.id.txtsearch);
 
 
         final Button b1 = findViewById(R.id.btnshow);
         final Button b2 = findViewById(R.id.btndelete);
-        final Button b3 = findViewById(R.id.btnupdate);
+        final Button b3 = findViewById(R.id.btnadd);
 
         //show code
         b1.setOnClickListener(new View.OnClickListener() {
