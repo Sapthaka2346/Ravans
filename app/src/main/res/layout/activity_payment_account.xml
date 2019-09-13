@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundhome"
     tools:context=".paymentAccount">
 
     <ImageView
@@ -19,94 +20,100 @@
         app:srcCompat="@drawable/myac" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/nid"
         android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="420dp"
-        android:hint="Registeration ID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
+        android:layout_height="46dp"
         android:layout_marginTop="12dp"
         android:hint="Card number"
+        android:textColor="#090505"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/rid" />
 
     <TextView
-        android:id="@+id/textView32"
-        android:layout_width="235dp"
-        android:layout_height="32dp"
+        android:id="@+id/naid"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-black"
         android:hint="Name"
-        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        android:textColor="#0A0505"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
-        android:id="@+id/textView33"
-        android:layout_width="242dp"
-        android:layout_height="48dp"
+        android:id="@+id/cvid"
+        android:layout_width="235dp"
+        android:layout_height="46dp"
         android:layout_marginTop="12dp"
         android:hint="CVC"
+        android:textColor="#0F0909"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/nid" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/did"
         android:layout_width="235dp"
-        android:layout_height="48dp"
+        android:layout_height="46dp"
         android:layout_marginTop="12dp"
         android:hint="Experitation Date"
+        android:textColor="#0A0505"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintTop_toBottomOf="@+id/cvid"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="52dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        android:layout_width="277dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:text="Welcome to Paradise Hotel"
+        android:textColor="#BC1FF9"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/naid" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/buttonC"
+        android:layout_width="220dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button"
+        android:onClick="pay2"
+        android:text="Change Your Information"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/did"
+        app:layout_constraintVertical_bias="0.449" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="89dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="102dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#FFFFFF"
         android:text="Registration ID"
-        app:layout_constraintEnd_toStartOf="@+id/textView19"
-        app:layout_constraintHorizontal_bias="0.38"
+        android:textColor="#0E0404"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/rid"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
@@ -114,10 +121,13 @@
         android:id="@+id/textView37"
         android:layout_width="92dp"
         android:layout_height="23dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Card Number"
-        app:layout_constraintEnd_toStartOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.322"
+        android:textColor="#0C0404"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/nid"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
@@ -126,9 +136,12 @@
         android:layout_width="84dp"
         android:layout_height="19dp"
         android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
         android:text="CVC"
-        app:layout_constraintEnd_toStartOf="@+id/textView33"
-        app:layout_constraintHorizontal_bias="0.421"
+        android:textColor="#090606"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cvid"
+        app:layout_constraintHorizontal_bias="0.289"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
@@ -137,11 +150,41 @@
         android:layout_width="78dp"
         android:layout_height="20dp"
         android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Ex Date"
+        android:textColor="#0E0909"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView34"
-        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintEnd_toStartOf="@+id/did"
+        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView38"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/rid"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Reg ID"
+        android:background="@drawable/inputfield"
+        android:textColorHint="@color/Darkblue"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="51dp"
+        android:layout_height="33dp"
+        android:background="@drawable/button"
+        android:text="*"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
