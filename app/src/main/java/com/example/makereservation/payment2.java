@@ -80,7 +80,7 @@ public class payment2 extends AppCompatActivity {
 
                     Toast.makeText(getApplicationContext(),"Data Save Succuessfully!",Toast.LENGTH_SHORT).show();
 
-                    Intent second = new Intent(getApplicationContext(),payment3.class);
+                    Intent second = new Intent(getApplicationContext(),paymentAccount.class);
                     startActivity(second);
 
 

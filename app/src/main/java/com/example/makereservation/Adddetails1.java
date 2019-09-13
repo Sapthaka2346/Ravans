@@ -77,6 +77,11 @@ public class Adddetails1 extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
+
+
+
+                        Intent i = new Intent(getApplicationContext(), AddDetails2.class);
+                        startActivity(i);
                     }
                 }catch (NumberFormatException e){
                     Toast.makeText(getApplicationContext(), "Invalid enters",Toast.LENGTH_SHORT).show();

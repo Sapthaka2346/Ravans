@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminHome">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+
+
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:background="#fffffc"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background = "@drawable/back"-->
+
+
+<!--                    >-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="218dp"-->
+<!--                        android:layout_height="119dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/homeback" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:text="@string/top"-->
+<!--                        android:textColor="#BC1FF9"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_marginTop="230dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="180dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginBottom="10dp"-->
+
+<!--                        >-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="70dp"-->
+<!--                                    android:layout_height="70dp"-->
+<!--                                    android:id="@+id/dashbordi1"-->
+<!--                                    android:src="@drawable/res1"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/reservation"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi1"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/Reservation"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent"-->
+<!--                                    android:onClick="Resavation" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:id="@+id/dashbordi2"-->
+<!--                                    android:src="@drawable/room1"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/rooms"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi2"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/bookNowBtn6"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="180dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginBottom="10dp"-->
+
+<!--                        >-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:id="@+id/dashbordi3"-->
+<!--                                    android:src="@drawable/contact"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/contact_us"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi3"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/bookNowBtn4"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent"-->
+<!--                                    android:onClick="contact" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:id="@+id/dashbordi4"-->
+<!--                                    android:src="@drawable/payment"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/payment"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi4"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/bookNowBtn7"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent"-->
+<!--                                    android:onClick="Payment" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="180dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_marginBottom="10dp"-->
+
+<!--                        >-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:id="@+id/dashbordi5"-->
+<!--                                    android:src="@drawable/location"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/Location"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi5"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/buttonitem"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent" />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginRight="5dp"-->
+
+
+<!--                            >-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="50dp"-->
+<!--                                    android:id="@+id/dashbordi6"-->
+<!--                                    android:src="@drawable/gallery"-->
+<!--                                    android:layout_centerInParent="true"-->
+
+<!--                                    />-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:text="@string/gallery"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:layout_below="@+id/dashbordi6"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:layout_marginTop="10dp"-->
+<!--                                    android:layout_marginBottom="10dp"-->
+
+<!--                                    />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/buttoncus"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:background="@android:color/transparent"-->
+<!--                                    />-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </RelativeLayout>-->
+<!--        </LinearLayout>-->
+
+
+
+<!--    </ScrollView>-->
+
+
+
+</RelativeLayout>
