@@ -38,7 +38,7 @@
                     >
 
                     <ImageView
-                        android:layout_width="218dp"
+                        android:layout_width="224dp"
                         android:layout_height="119dp"
                         android:layout_gravity="center"
                         android:background="@drawable/homeback" />
