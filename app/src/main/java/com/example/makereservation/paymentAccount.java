@@ -25,10 +25,10 @@ public class paymentAccount extends AppCompatActivity {
         setContentView(R.layout.activity_payment_account);
 
         final TextView p1 = findViewById(R.id.rid);
-        final TextView p2 = findViewById(R.id.nid);
-        final TextView p3 = findViewById(R.id.naid);
-        final TextView p4 = findViewById(R.id.cvid);
-        final TextView p5 = findViewById(R.id.did);
+        final TextView p2 = findViewById(R.id.cno);
+        final TextView p3 = findViewById(R.id.nd);
+        final TextView p4 = findViewById(R.id.Cvcd);
+        final TextView p5 = findViewById(R.id.dd);
 
         Button btnView = findViewById(R.id.button10);
 
