@@ -23,11 +23,11 @@ public class Home extends AppCompatActivity {
             startActivity(i1);
         }
 
-     //   public void Rates(View view)
-     //   {
-      //      Intent i1 = new Intent (Home.this,.class);
-     //       startActivity(i1);
-     //   }
+        public void Gallery(View view)
+        {
+            Intent i1 = new Intent (Home.this,slideshowGallary.class);
+            startActivity(i1);
+        }
 
 
      //   public void room(View view)
