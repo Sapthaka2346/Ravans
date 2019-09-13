@@ -73,7 +73,9 @@ public class Adddetails1 extends AppCompatActivity {
                         addDetails.setChilds(txtChild.getText().toString().trim());
                         addDetails.setCost(txtCost.getText().toString().trim());
 
-                        dbRef.push().setValue(addDetails);
+                       // dbRef.push().setValue(addDetails);
+
+                        dbRef.child(addDetails.getRoomtype()).setValue(addDetails);
 
                         Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
