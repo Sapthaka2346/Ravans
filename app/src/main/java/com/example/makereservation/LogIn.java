@@ -71,9 +71,5 @@ public class LogIn extends AppCompatActivity {
     private static void setEnabled(boolean b) {
     }
 
-    public void addDetasils(View v) {
 
-        Intent click = new Intent(this, Adddetails1.class);
-        startActivity(click);
-    }
 }
