@@ -20,6 +20,7 @@ public class Addddmiiiinnn extends AppCompatActivity {
 
         cntbtn = (Button) findViewById(R.id.cntbtn);
         pybtn = (Button) findViewById(R.id.pybtn);
+        adbtn = (Button) findViewById(R.id.adbtn);
 
 
         cntbtn.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,12 @@ public class Addddmiiiinnn extends AppCompatActivity {
                 openpaymentnew();
             }
         });
+        adbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openadddetails1();
+            }
+        });
 
 
     }
@@ -46,6 +53,10 @@ public class Addddmiiiinnn extends AppCompatActivity {
 
     public void openpaymentnew(){
         Intent intent = new Intent(this, paymentnew.class);
+        startActivity(intent);
+    }
+    public void openadddetails1(){
+        Intent intent = new Intent(this,Adddetails1.class);
         startActivity(intent);
     }
 
