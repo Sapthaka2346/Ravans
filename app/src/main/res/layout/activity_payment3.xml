@@ -222,6 +222,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button"
+        android:onClick="ac"
         android:text="my profile"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
