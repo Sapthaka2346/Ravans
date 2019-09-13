@@ -130,6 +130,12 @@ public class payment3 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void ac(View view){
+
+        Intent ac1 = new Intent(getApplicationContext(), paymentAccount.class);
+        startActivity(ac1);
 
     }
 }
