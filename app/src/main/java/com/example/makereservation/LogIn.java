@@ -25,8 +25,6 @@ public class LogIn extends AppCompatActivity {
     private EditText passwordtxt;
     private EditText usernametxt;
     Button btnlogin;
-//    Button adminloginbtn;
-
     RadioButton radioAdmin;
     RadioButton radioUser;
     private int counter = 5;
@@ -38,12 +36,11 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
       btnlogin = (Button) findViewById(R.id.btnlogin);
-//      adminloginbtn = (Button) findViewById(R.id.adminloginbtn);
       passwordtxt = (EditText) findViewById(R.id.passwordtxt);
       usernametxt = (EditText) findViewById(R.id.usernametxt);
 
-        radioAdmin = findViewById(R.id.adminloginbtn);
-        radioUser = findViewById(R.id.userloginbtn);
+      radioAdmin = findViewById(R.id.adminloginbtn);
+      radioUser = findViewById(R.id.userloginbtn);
 
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +68,6 @@ public class LogIn extends AppCompatActivity {
                     }
                 }
 
-//                validate(usernametxt.getText().toString(), passwordtxt.getText().toString());
             }
 
 
@@ -111,20 +107,8 @@ public class LogIn extends AppCompatActivity {
 
 
         });
-//        adminloginbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(getApplicationContext(), Addddmiiiinnn.class);
-//                startActivity(i);
-//            }
-//        });
 
     }
-
-
-
     private static void setEnabled(boolean b) {
     }
-
-
 }
