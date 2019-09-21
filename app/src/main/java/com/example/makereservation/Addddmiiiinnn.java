@@ -12,6 +12,7 @@ public class Addddmiiiinnn extends AppCompatActivity {
     private Button cntbtn;
     private Button pybtn;
     private Button adbtn;
+    private Button mkrbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class Addddmiiiinnn extends AppCompatActivity {
         cntbtn = (Button) findViewById(R.id.cntbtn);
         pybtn = (Button) findViewById(R.id.pybtn);
         adbtn = (Button) findViewById(R.id.adbtn);
+        mkrbtn=(Button) findViewById(R.id.mkrbtn);
 
 
         cntbtn.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +45,12 @@ public class Addddmiiiinnn extends AppCompatActivity {
                 openadddetails1();
             }
         });
+        mkrbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMakereservationAdmin();
+            }
+        });
 
 
     }
@@ -59,5 +67,8 @@ public class Addddmiiiinnn extends AppCompatActivity {
         Intent intent = new Intent(this,Adddetails1.class);
         startActivity(intent);
     }
-
+    public void openMakereservationAdmin() {
+        Intent intent = new Intent(this, Makereservationadmin.class);
+        startActivity(intent);
+    }
 }
