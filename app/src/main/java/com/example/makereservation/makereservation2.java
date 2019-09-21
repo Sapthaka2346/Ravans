@@ -28,7 +28,7 @@ public class makereservation2 extends AppCompatActivity {
 
         txtname=findViewById(R.id.txtname);
         txtaddress=findViewById(R.id.txtaddress);
-        txtcontact=findViewById(R.id.CvcID);
+        txtcontact=findViewById(R.id.txtcontact);
         txtcheckin=findViewById(R.id.txtcheckin);
         txtcheckout=findViewById(R.id.txtcheckout);
         txtnic=findViewById(R.id.txtnic);

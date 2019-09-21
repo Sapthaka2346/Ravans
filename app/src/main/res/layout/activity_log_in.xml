@@ -15,7 +15,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/inputfield"
-
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -26,7 +25,7 @@
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernametxt"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <EditText
         android:id="@+id/usernametxt"
@@ -43,25 +42,27 @@
         android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="0.618" />
 
     <RadioButton
         android:id="@+id/adminloginbtn"
         android:layout_width="120dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/inputfield"
         android:text="Admin LogIn"
+        android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toEndOf="@+id/userloginbtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <RadioButton
         android:id="@+id/userloginbtn"
@@ -70,34 +71,39 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/inputfield"
         android:text="User LogIn"
+        android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
         android:id="@+id/btnlogin"
-        android:layout_width="107dp"
-        android:layout_height="43dp"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button"
         android:text="LogIn"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordtxt"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordtxt" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="147dp"
-        android:layout_height="151dp"
+        android:layout_width="140dp"
+        android:layout_height="164dp"
         app:layout_constraintBottom_toTopOf="@+id/usernametxt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/myac" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

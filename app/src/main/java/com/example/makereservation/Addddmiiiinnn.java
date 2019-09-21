@@ -10,6 +10,9 @@ import android.widget.Button;
 public class Addddmiiiinnn extends AppCompatActivity {
 
     private Button cntbtn;
+    private Button pybtn;
+    private Button adbtn;
+    private Button mkrbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,16 +20,55 @@ public class Addddmiiiinnn extends AppCompatActivity {
         setContentView(R.layout.activity_addddmiiiinnn);
 
         cntbtn = (Button) findViewById(R.id.cntbtn);
+        pybtn = (Button) findViewById(R.id.pybtn);
+        adbtn = (Button) findViewById(R.id.adbtn);
+        mkrbtn=(Button) findViewById(R.id.mkrbtn);
+
+
         cntbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 opencontactus3();
+
+            }
+
+        });
+        pybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openpaymentnew();
             }
         });
+        adbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openadddetails1();
+            }
+        });
+        mkrbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMakereservationAdmin();
+            }
+        });
+
+
     }
     public void opencontactus3(){
         Intent intent = new Intent(this, contactus3.class);
         startActivity(intent);
     }
 
+    public void openpaymentnew(){
+        Intent intent = new Intent(this, paymentnew.class);
+        startActivity(intent);
+    }
+    public void openadddetails1(){
+        Intent intent = new Intent(this,Adddetails1.class);
+        startActivity(intent);
+    }
+    public void openMakereservationAdmin() {
+        Intent intent = new Intent(this, Makereservationadmin.class);
+        startActivity(intent);
+    }
 }
