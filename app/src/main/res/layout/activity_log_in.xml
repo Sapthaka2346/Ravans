@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hotelnameback"
+    android:background="@drawable/loginbacknew"
     tools:context=".LogIn">
 
     <EditText
@@ -42,10 +42,10 @@
         android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <RadioButton
         android:id="@+id/adminloginbtn"
@@ -61,14 +61,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toEndOf="@+id/userloginbtn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
         android:id="@+id/userloginbtn"
         android:layout_width="120dp"
         android:layout_height="43dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/inputfield"
@@ -76,8 +75,7 @@
         android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnlogin"
@@ -90,14 +88,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordtxt" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordtxt"
+        app:layout_constraintVertical_bias="0.429" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="140dp"
-        android:layout_height="164dp"
+        android:layout_width="143dp"
+        android:layout_height="131dp"
         app:layout_constraintBottom_toTopOf="@+id/usernametxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hotelnameback"
+    android:background="@drawable/myprofile"
     tools:context=".paymentAccount">
 
     <ImageView
@@ -77,7 +77,7 @@
         android:id="@+id/textView35"
         android:layout_width="224dp"
         android:layout_height="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="56dp"
         android:text="Welcome To Paradise Hotel"
         android:textColor="#BC1FF9"
         android:textSize="18sp"
@@ -96,8 +96,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dd" />
+        app:layout_constraintTop_toBottomOf="@+id/dd"
+        app:layout_constraintVertical_bias="0.542" />
 
     <TextView
         android:id="@+id/textView36"
@@ -158,12 +160,12 @@
         android:layout_width="232dp"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/inputfield"
         android:ems="10"
         android:hint="Register ID"
-        android:background="@drawable/inputfield"
-        android:textColorHint="@color/Darkblue"
         android:inputType="textPersonName"
+        android:textColorHint="@color/Darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
