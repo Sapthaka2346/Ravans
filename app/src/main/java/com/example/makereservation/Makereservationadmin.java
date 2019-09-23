@@ -39,7 +39,7 @@ public class Makereservationadmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makereservationadmin);
 
-        stdListview = (ListView) findViewById(R.id.makereservationListview);
+        stdListview = findViewById(R.id.ReservationListView);
 
         checkin1 = new ArrayList<String>();
         checkout1 = new ArrayList<String>();

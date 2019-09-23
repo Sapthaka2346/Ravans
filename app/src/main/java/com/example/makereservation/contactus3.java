@@ -39,7 +39,7 @@ public class contactus3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contactus3);
 
-        stdListview = (ListView) findViewById(R.id.contactListview);
+        stdListview = (ListView) findViewById(R.id.contactsListView);
 
         contactName = new ArrayList<String>();
         contactEmail = new ArrayList<String>();
@@ -80,7 +80,7 @@ public class contactus3 extends AppCompatActivity {
                             contactMessage.add(strMessage);
                             //photo_link.add(strPhotoLink);
 
-                            MyStudentAdapter adapter = new MyStudentAdapter(getApplicationContext(),contactName,contactEmail,contactPhone,contactMessage);
+                            MyContactAdapter adapter = new MyContactAdapter(getApplicationContext(),contactName,contactEmail,contactPhone,contactMessage);
                             stdListview.setAdapter(adapter);
                         }
 
@@ -102,7 +102,7 @@ public class contactus3 extends AppCompatActivity {
 
     }
 }
-class MyStudentAdapter extends ArrayAdapter<String> {
+class MyContactAdapter extends ArrayAdapter<String> {
     Context context;
 
     ArrayList contactName;
@@ -134,7 +134,7 @@ class MyStudentAdapter extends ArrayAdapter<String> {
                // .into(stdPhoto);
         return cntrow;
     }
-    MyStudentAdapter(Context c,ArrayList contactName, ArrayList contactEmail, ArrayList contactPhone, ArrayList contactMessage){
+    MyContactAdapter(Context c,ArrayList contactName, ArrayList contactEmail, ArrayList contactPhone, ArrayList contactMessage){
         super(c, R.layout.contactview, R.id.tvcontactName, contactName);
         this.context = c;
 
