@@ -60,7 +60,7 @@ public class Addddmiiiinnn extends AppCompatActivity {
     }
 
     public void openpaymentnew(){
-        Intent intent = new Intent(this, paymentnew.class);
+        Intent intent = new Intent(this, viewpaymentdetails.class);
         startActivity(intent);
     }
     public void openadddetails1(){

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Registration ID:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Card Holder Number:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Card Holder Name:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CVC:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Expiration Date "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcvc1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvexdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+    </LinearLayout>
+
+</LinearLayout>
