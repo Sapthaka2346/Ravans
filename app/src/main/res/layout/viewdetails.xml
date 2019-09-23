@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewDetails"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/viewDetails">
+    android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -13,32 +13,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Room Type:"/>
+            android:text="Room Type:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Check In: "/>
+            android:text="Check In: " />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Check Out:  "/>
+            android:text="Check Out:  " />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Adults: "/>
+            android:text="Adults: " />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Childs: "/>
+            android:text="Childs: " />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Cost: "/>
+            android:text="Cost: " />
     </LinearLayout>
 
     <LinearLayout

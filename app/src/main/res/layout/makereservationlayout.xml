@@ -11,27 +11,39 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Feedback ID:"/>
+            android:text="NIC:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Student ID: "/>
+            android:text="FullName:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Student Name:         "/>
+            android:text="Address:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Subject: "/>
+            android:text="ContactNumber:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Feedback: "/>
+            android:text="Checkin:" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkout:" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rooms:" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,13 +52,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvcheckin1"
+            android:id="@+id/tvcheckout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="-" />
 
         <TextView
-            android:id="@+id/tvcheckout1"
+            android:id="@+id/tvcontactnumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="-" />
@@ -64,13 +76,13 @@
             android:text="-" />
 
         <TextView
-            android:id="@+id/tvfullname"
+            android:id="@+id/tvcontactnumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="-" />
 
         <TextView
-            android:id="@+id/tvnic"
+            android:id="@+id/tvcheckout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="-" />
@@ -82,5 +94,11 @@
             android:text="-" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:text="-" />
 
 </LinearLayout>

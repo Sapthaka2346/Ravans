@@ -22,35 +22,35 @@ public class Addddmiiiinnn extends AppCompatActivity {
         cntbtn = (Button) findViewById(R.id.cntbtn);
         pybtn = (Button) findViewById(R.id.pybtn);
         adbtn = (Button) findViewById(R.id.adbtn);
-        mkrbtn=(Button) findViewById(R.id.mkrbtn);
+        mkrbtn=(Button) findViewById(R.id.button6);
 
 
-        cntbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                opencontactus3();
-
-            }
-
-        });
-        pybtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openpaymentnew();
-            }
-        });
-        adbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openadddetails1();
-            }
-        });
-        mkrbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMakereservationAdmin();
-            }
-        });
+//       cntbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                opencontactus3();
+//
+//            }
+//
+//        });
+//        pybtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openpaymentnew();
+//            }
+//        });
+//        adbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openadddetails1();
+//            }
+//        });
+//        mkrbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openmakereservationadmin();
+//            }
+//        });
 
 
     }
@@ -67,8 +67,10 @@ public class Addddmiiiinnn extends AppCompatActivity {
         Intent intent = new Intent(this,Adddetails1.class);
         startActivity(intent);
     }
-    public void openMakereservationAdmin() {
-        Intent intent = new Intent(this, Makereservationadmin.class);
-        startActivity(intent);
+
+    public void Reserve(View view)
+    {
+        Intent i1 = new Intent (Addddmiiiinnn.this,Makereservationadmin.class);
+        startActivity(i1);
     }
 }

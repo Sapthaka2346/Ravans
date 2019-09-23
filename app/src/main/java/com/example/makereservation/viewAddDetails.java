@@ -82,7 +82,7 @@ public class viewAddDetails extends AppCompatActivity {
                             childs.add(strchilds);
                             cost.add(strcost);
 
-                            MyStudentAdapter adapter = new MyStudentAdapter(getApplicationContext(),roomtype,checkin,checkout,adults,childs,cost);
+                            MyadddetailsAdapter adapter = new MyadddetailsAdapter(getApplicationContext(),roomtype,checkin,checkout,adults,childs,cost);
                             stdListview.setAdapter(adapter);
                         }
 
@@ -103,7 +103,7 @@ public class viewAddDetails extends AppCompatActivity {
 
     }
 }
-class MyStudentAdapter extends ArrayAdapter<String> {
+class MyadddetailsAdapter extends ArrayAdapter<String> {
     Context context;
 
     ArrayList roomtype;
@@ -142,7 +142,7 @@ class MyStudentAdapter extends ArrayAdapter<String> {
 //                .into(stdPhoto);
        return stdrow;
     }
-    MyStudentAdapter(Context c,ArrayList roomtype, ArrayList checkin, ArrayList checkout, ArrayList adults, ArrayList child,ArrayList cost) {
+    MyadddetailsAdapter(Context c,ArrayList roomtype, ArrayList checkin, ArrayList checkout, ArrayList adults, ArrayList child,ArrayList cost) {
         super(c, R.layout.viewdetails, R.id.tvroomtype, roomtype);
         this.context = c;
 

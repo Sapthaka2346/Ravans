@@ -74,7 +74,7 @@ public class Makereservationadmin extends AppCompatActivity {
                             strcontactnumber = dataSnapshot.child("contactnumber").getValue().toString();
                             strrooms = dataSnapshot.child("rooms").getValue().toString();
                             strnic = dataSnapshot.child("nic").getValue().toString();
-                            strfullname = dataSnapshot.child("fullname").getValue().toString();
+                            strfullname = dataSnapshot.child("fullName").getValue().toString();
 
 
                             checkin1.add(strcheckin1);
@@ -130,12 +130,12 @@ class MyReservationAdapter extends ArrayAdapter<String> {
         LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View stdrow = layoutInflater.inflate(R.layout.makereservationlayout,parent,false);
 
-        TextView tvcheckin = stdrow.findViewById(R.id.tvcheckin1);
-        TextView tvcheckout = stdrow.findViewById(R.id.tvcheckout1);
+        TextView tvcheckin = stdrow.findViewById(R.id.tvcheckout);
+        TextView tvcheckout = stdrow.findViewById(R.id.tvcontactnumber);
         TextView tvaddress = stdrow.findViewById(R.id.tvaddress);
         TextView tvcontactnumber = stdrow.findViewById(R.id.tvcontactnumber);
-        TextView tvfullname = stdrow.findViewById(R.id.tvfullname);
-        TextView tvnic = stdrow.findViewById(R.id.tvnic);
+        TextView tvfullname = stdrow.findViewById(R.id.tvcontactnumber);
+        TextView tvnic = stdrow.findViewById(R.id.tvcheckout);
         TextView tvrooms = stdrow.findViewById(R.id.tvrooms);
 
         tvcheckin.setText(checkin1.get(position).toString());
@@ -152,8 +152,8 @@ class MyReservationAdapter extends ArrayAdapter<String> {
         //        .into(stdPhoto);
         return stdrow;
     }
-    MyReservationAdapter(Context c, ArrayList nic, ArrayList username, ArrayList address, ArrayList contactnumber, ArrayList checkin1,ArrayList checkout1,ArrayList rooms){
-        super(c, R.layout.makereservationlayout, R.id.tvnic, nic);
+    MyReservationAdapter(Context c, ArrayList nic, ArrayList fullname, ArrayList address, ArrayList contactnumber, ArrayList checkin1, ArrayList checkout1, ArrayList rooms){
+        super(c, R.layout.makereservationlayout, R.id.tvcheckout, nic);
         this.context = c;
 
         this.checkin1 = checkin1;

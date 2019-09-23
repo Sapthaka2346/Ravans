@@ -42,9 +42,5 @@ public class makereservation1 extends AppCompatActivity {
         });
     }
 
-   public void puka(View view)
-    {
-        Intent i1 = new Intent (makereservation1.this,Makereservationadmin.class);
-       startActivity(i1);
-   }
+
 }
