@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".viewAddDetails"></activity>
         <activity android:name=".LogIn" />
-        <activity android:name=".slideshowGallary"></activity>
+        <activity android:name=".slideshowGallary" />
         <activity android:name=".Addddmiiiinnn" />
         <activity android:name=".paymentAccount" /> <!-- <activity android:name=".LogIn"></activity> -->
         <activity android:name=".payment3" />
@@ -23,6 +24,7 @@
         <activity android:name=".makereservation2" />
         <activity android:name=".makereservation3" />
         <activity android:name=".makereservation4" />
+        <activity android:name=".Makereservationadmin" />
         <activity android:name=".contactus1" />
         <activity android:name=".contactus2" />
         <activity android:name=".contactus3" /> <!-- <activity android:name=".paymentnew"> -->

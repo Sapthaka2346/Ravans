@@ -38,4 +38,10 @@ public class checkavailability1 extends AppCompatActivity {
 //        Intent intent = new Intent(this, checkavailability2.class);
 //        startActivity(intent);
     }
+
+    public void roomdetails(View view)
+    {
+        Intent i1 = new Intent (checkavailability1.this,viewAddDetails.class);
+        startActivity(i1);
+    }
 }

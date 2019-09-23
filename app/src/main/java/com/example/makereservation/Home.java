@@ -48,7 +48,7 @@ public class Home extends AppCompatActivity {
 
        public void room(View view)
       {
-           Intent i1 = new Intent (Home.this,checkavailability1.class);
+           Intent i1 = new Intent (Home.this,viewAddDetails.class);
            startActivity(i1);
     }
 
