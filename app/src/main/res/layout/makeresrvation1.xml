@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundhome"
+    android:background="@drawable/homegold"
     tools:context=".makereservation1">
 
     <Button
@@ -17,7 +17,7 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/button"
         android:text="Book Now"
-        android:textColor="#FDFBFB"
+        android:textColor="#070606"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,16 +38,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="330dp"
-        android:layout_height="60dp"
+        android:layout_width="290dp"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/gold"
+        android:background="@drawable/button"
         android:text="@string/make_reservation"
         android:textAlignment="center"
-        android:textColor="#FDFBFB"
+        android:textColor="#111010"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,15 +81,15 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="151dp"
-        android:layout_height="80dp"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
         android:onClick="puka"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

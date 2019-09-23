@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundhome"
+    android:background="@drawable/backgrounddesign"
     tools:context=".paymentnew">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_height="44dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/Welcome"
-        android:textColor="#8B1FF8"
+        android:textColor="#F1EEF3"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
@@ -30,7 +30,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/setup_you_re_payment"
-        android:textColor="#8B1FF8"
+        android:textColor="#F4F2F7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
@@ -60,39 +60,39 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="168dp"
-        android:layout_height="27dp"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif"
-        android:text="@string/you_are_a_member"
-        android:textColor="#1B1063"
+        android:text="@string/you_ate_a_new_member"
+        android:textColor="#030303"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="86dp"
-        android:layout_height="26dp"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/register"
-        android:textColor="#8B1FF8"
+        android:text="@string/enjoy_our_service"
+        android:textColor="#F3F2F5"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988" />
+        app:layout_constraintVertical_bias="0.998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

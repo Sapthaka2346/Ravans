@@ -29,24 +29,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:background="@drawable/hhhhhhhhhhhhhh"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="-20dp"
+                    android:background="@drawable/hometop"
                     android:gravity="center"
-                    android:orientation="vertical"
-
-
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/top"
-                        android:textColor="#BC1FF9"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-
-                </LinearLayout>
+                    android:orientation="vertical" />
 
 
                 <LinearLayout
@@ -87,7 +79,7 @@
                                     android:layout_width="70dp"
                                     android:layout_height="70dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/res1"
+                                    android:src="@drawable/resavation"
 
                                     />
 
@@ -134,7 +126,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/room1"
+                                    android:src="@drawable/rooms"
 
                                     />
 
@@ -239,7 +231,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/payment"
+                                    android:src="@drawable/pay"
 
                                     />
 

@@ -77,6 +77,11 @@
     <string name="cvc1">CVC</string>
     <string name="card_number">Card number</string>
     <string name="name1">Name</string>
+    <string name="you_are_a_new_member">newmem</string>
+    <string name="enjoy_our_service">enjoy our service</string>
+    <string name="you_ate_a_new_member">you ate a new member?</string>
+    <string name="your_are_a_new_member">your are a new_member</string>
+    <string name="your_are_a">your_are_a_new_member?</string>
 
 
 </resources>

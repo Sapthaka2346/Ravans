@@ -4,41 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/payment2back"
+    android:background="@drawable/topwhite"
     tools:context=".payment2">
 
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="175dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif"
-        android:text="@string/your_are_not_member"
-        android:textColor="#1B1063"
+        android:text="@string/your_are_a"
+        android:textColor="#070707"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="101dp"
+        android:layout_width="141dp"
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/Register"
-        android:textColor="#8B1FF8"
+        android:text="enjoy the service"
+        android:textColor="#F4F2F5"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/CnoID"
@@ -121,30 +117,13 @@
         android:background="@drawable/button"
         android:text="Proceed Payments"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="#0A0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EdayID"
-        app:layout_constraintVertical_bias="0.15" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="90dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Need Help?"
-        android:textColor="@color/gold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/insertbtn"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.391" />
 
     <TextView
         android:id="@+id/textView11"
@@ -225,7 +204,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/visa" />
+        app:srcCompat="@drawable/visa1" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -237,6 +216,6 @@
         app:layout_constraintStart_toEndOf="@+id/radioButton6"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/master" />
+        app:srcCompat="@drawable/master1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

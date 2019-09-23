@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbacknew"
+    android:background="@drawable/loginback"
     tools:context=".LogIn">
 
     <EditText
@@ -84,7 +84,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/button"
         android:text="LogIn"
-        android:textColor="#FFFFFF"
+        android:textColor="#0E0D0D"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,14 +95,14 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="143dp"
-        android:layout_height="131dp"
+        android:layout_width="178dp"
+        android:layout_height="159dp"
         app:layout_constraintBottom_toTopOf="@+id/usernametxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4"
-        app:srcCompat="@drawable/myac" />
+        app:layout_constraintVertical_bias="0.546"
+        app:srcCompat="@drawable/myicon1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

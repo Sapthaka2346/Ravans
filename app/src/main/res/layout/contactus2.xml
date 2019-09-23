@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundhome"
+    android:background="@drawable/topwhite"
     tools:context=".contactus2">
 
 
@@ -109,8 +109,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -118,7 +118,7 @@
         android:background="@drawable/button"
         android:onClick="onUpdateButtonPushed"
         android:text="@string/update"
-        android:textColor="@color/white"
+        android:textColor="#0A0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -128,15 +128,15 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="104dp"
         android:layout_marginBottom="68dp"
-        android:text="@string/delete"
         android:background="@drawable/button"
-        android:textColor="@color/white"
+        android:text="@string/delete"
+        android:textColor="#080A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -166,7 +166,7 @@
         android:layout_height="43dp"
         android:background="@drawable/button"
         android:text="View"
-        android:textColor="@color/white"
+        android:textColor="#0D0E0E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
