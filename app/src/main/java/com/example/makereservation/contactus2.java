@@ -48,6 +48,7 @@ public class contactus2 extends AppCompatActivity {
         nt3.setText(s3);
         nt4.setText(s4);
 
+
         Button viw = findViewById(R.id.button14);
         final Button upd = findViewById(R.id.button2);
        final Button del = findViewById(R.id.button3);
@@ -83,6 +84,8 @@ public class contactus2 extends AppCompatActivity {
                     }
                 } );
 
+
+
                 upd.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -97,9 +100,9 @@ public class contactus2 extends AppCompatActivity {
 
                         if(dataSnapshot.hasChild(nt0.getText().toString().trim())) {
                             try {
-//                                ct.setContactName(nt1.getText().toString().trim());
-//                                ct.setContactEmail(nt2.getText().toString().trim());
-//                                ct.setContactPhone(nt3.getText().toString().trim());
+                              ct.setContactName(nt1.getText().toString().trim());
+                                ct.setContactEmail(nt2.getText().toString().trim());
+                               ct.setContactPhone(nt3.getText().toString().trim());
                                 ct.setContactMessage(nt4.getText().toString().trim());
 
                                 DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("Contact Us").child(nt0.getText().toString());
@@ -173,6 +176,12 @@ public class contactus2 extends AppCompatActivity {
 
 
     }
+  //  private  void clearControls(){
+  //      contactName.setText("");
+  //      contactEmail.setText("");
+  //      contactPhone.setText("");
+  //      contactMessage.setText("");
+  //  }
 
 
 }
