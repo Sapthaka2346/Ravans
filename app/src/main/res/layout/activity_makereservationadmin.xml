@@ -7,4 +7,11 @@
     android:background="@drawable/backgroundhome"
     tools:context=".Makereservationadmin">
 
+    <ListView
+        android:id="@+id/ReservationListView"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

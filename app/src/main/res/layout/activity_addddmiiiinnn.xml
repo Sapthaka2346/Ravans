@@ -25,7 +25,8 @@
         android:layout_height="480dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40">
+        app:layout_constraintTop_toBottomOf="@+id/textView40"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/cntbtn"
@@ -47,9 +48,9 @@
             android:id="@+id/adbtn"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginTop="48dp"
-            android:onClick="sendMessage"
+            android:layout_marginTop="44dp"
             android:background="@drawable/button"
+            android:onClick="sendMessage"
             android:text="ADD DETAILS"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -63,8 +64,8 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginTop="44dp"
-            android:onClick="sendMessage"
             android:background="@drawable/button"
+            android:onClick="sendMessage"
             android:text="PAYMENT"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -74,20 +75,21 @@
             app:layout_constraintTop_toBottomOf="@+id/adbtn" />
 
         <Button
-            android:id="@+id/mkrbtn"
+            android:id="@+id/button6"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginTop="48dp"
             android:background="@drawable/button"
-            android:text="MAKE RESERVATION"
-            android:textColor="@color/white"
+            android:onClick="Reserve"
+            android:text="Make Reservation"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pybtn"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

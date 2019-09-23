@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NIC:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FullName:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Address:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ContactNumber:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkin:" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkout:" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rooms:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvcheckout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcheckout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvrooms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:text="-" />
+
+</LinearLayout>

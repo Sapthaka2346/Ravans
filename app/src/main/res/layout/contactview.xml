@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONTACT NAME:"
+            android:textColor="#030303"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONTACT EMAIL: "
+            android:textColor="#070707" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONTACT PHONE:         "
+            android:textColor="#090808" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONTACT MESSAGE: "
+            android:textColor="#090808" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/tvcontactName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvcontactMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+    </LinearLayout>
+
+</LinearLayout>

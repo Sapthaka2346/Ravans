@@ -111,5 +111,10 @@ public class Adddetails1 extends AppCompatActivity {
 
     }
 
+    public void view(View view)
+    {
+        Intent i1 = new Intent (Adddetails1.this,viewAddDetails.class);
+        startActivity(i1);
+    }
 
 }
