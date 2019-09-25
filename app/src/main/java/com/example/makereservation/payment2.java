@@ -13,8 +13,25 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Pattern;
+
 public class payment2 extends AppCompatActivity {
 
+    private boolean isValidMobile(String nt2){
+        if(!Pattern.matches("[a-zA-Z]+", nt2)){
+            return nt2.length() != 16;
+        }
+        return false;
+    }
+
+    private boolean iscvc(String nt4){
+        if(!Pattern.matches("[a-zA-Z]+", nt4)){
+            return nt4.length() != 3;
+        }
+        return false;
+    }
+
+    //Insert Method
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +43,8 @@ public class payment2 extends AppCompatActivity {
         final EditText nt3 = findViewById(R.id.NamID);
         final EditText nt4 = findViewById(R.id.CvcID);
         final EditText nt5 = findViewById(R.id.EdayID);
+
+
 
         Button btn1 = findViewById(R.id.insertbtn);
 
@@ -57,7 +76,7 @@ public class payment2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"please enter card number",Toast.LENGTH_SHORT).show();
                 }
                 else if(TextUtils.isEmpty(nt3.getText().toString())){
-                    Toast.makeText(getApplicationContext(),"please enter name",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"please enter a name",Toast.LENGTH_SHORT).show();
                 }
 
                 else if(TextUtils.isEmpty(nt4.getText().toString())){
@@ -68,6 +87,13 @@ public class payment2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please enter Expiration Date",Toast.LENGTH_SHORT).show();
                 }
 
+                else  if(isValidMobile(nt2.getText().toString())){
+                    Toast.makeText(getApplicationContext(),"Please enter a valid card number", Toast.LENGTH_SHORT).show();
+                }
+
+                else  if(iscvc(nt4.getText().toString())) {
+                    Toast.makeText(getApplicationContext(), "Please enter a valid CVC number", Toast.LENGTH_SHORT).show();
+                }
                 else{
 
                     paymentdetails.setRid(nt1.getText().toString().trim());

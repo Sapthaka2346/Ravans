@@ -111,6 +111,7 @@ public class contactus1 extends AppCompatActivity {
                         clearControls();
                         Intent i = new Intent(getApplicationContext(), contactus2.class);
                         startActivity(i);
+                        finish();
 
                     }
 

@@ -25,27 +25,27 @@ public class Addddmiiiinnn extends AppCompatActivity {
         mkrbtn=(Button) findViewById(R.id.button6);
 
 
-//       cntbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                opencontactus3();
-//
-//            }
-//
-//        });
-//        pybtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                openpaymentnew();
-//            }
-//        });
-//        adbtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                openadddetails1();
-//            }
-//        });
-//        mkrbtn.setOnClickListener(new View.OnClickListener() {
+       cntbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opencontactus3();
+
+            }
+
+        });
+       pybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View view) {
+               openpaymentnew();
+            }
+        });
+        adbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View view) {
+                openadddetails1();
+            }
+        });
+//     //   mkrbtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
 //                openmakereservationadmin();

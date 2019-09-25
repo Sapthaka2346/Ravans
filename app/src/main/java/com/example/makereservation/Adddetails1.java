@@ -20,12 +20,15 @@ public class Adddetails1 extends AppCompatActivity {
     DatabaseReference dbRef;
     AddDetails addDetails;
 
+    private Button updateD;
+
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adddetails1);
 
+        updateD =(Button) findViewById(R.id.button5);
         button =(Button) findViewById(R.id.btnadd);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -114,6 +117,12 @@ public class Adddetails1 extends AppCompatActivity {
     public void view(View view)
     {
         Intent i1 = new Intent (Adddetails1.this,viewAddDetails.class);
+        startActivity(i1);
+    }
+
+    public void updateD(View view)
+    {
+        Intent i1 = new Intent (Adddetails1.this,AddDetails2.class);
         startActivity(i1);
     }
 

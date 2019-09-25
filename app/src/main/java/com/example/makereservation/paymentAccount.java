@@ -33,7 +33,7 @@ public class paymentAccount extends AppCompatActivity {
         Button btnView = findViewById(R.id.button10);
 
 
-        //View Method//
+        //View Method for Account
 
         btnView.setOnClickListener(new View.OnClickListener() {
             @Override

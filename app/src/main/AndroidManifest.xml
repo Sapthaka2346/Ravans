@@ -16,6 +16,9 @@
         <activity android:name=".payment3" />
         <activity android:name=".payment2" />
         <activity android:name=".Home" />
+        <activity android:name=".viewAddDetails"/>
+        <activity android:name=".Makereservationadmin"/>
+        <activity android:name=".viewpaymentdetails"/>
         <activity android:name=".checkavailability1" />
         <activity android:name=".checkavailability2" />
         <activity android:name=".paymentnew" />

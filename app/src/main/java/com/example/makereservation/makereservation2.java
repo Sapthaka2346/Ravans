@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.regex.Pattern;
+
 import static android.text.TextUtils.isEmpty;
 
 public class makereservation2 extends AppCompatActivity {
@@ -20,6 +22,12 @@ public class makereservation2 extends AppCompatActivity {
     Button SUBMIT;
     EditText txtname,txtaddress,txtcontact,txtcheckin,txtcheckout,txtrooms,txtnic;
 
+    private boolean isValidMobile(String txtContact){
+        if(!Pattern.matches("[a-zA-Z]+", txtContact)){
+            return txtContact.length() != 10;
+        }
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +76,9 @@ public class makereservation2 extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Please enter your Check-In date", Toast.LENGTH_LONG).show();
                             else if (isEmpty((txtcheckout.getText().toString())))
                                 Toast.makeText(getApplicationContext(), "Please enter your Check-Out date", Toast.LENGTH_LONG).show();
+                            else  if(isValidMobile(txtcontact.getText().toString())){
+                                Toast.makeText(getApplicationContext(),"Please enter a valid phone number", Toast.LENGTH_SHORT).show();
+                            }
                             else{
 
                                 makereservation.setCheckin(txtrooms.getText().toString().trim());

@@ -104,6 +104,8 @@ public class payment3 extends AppCompatActivity {
             }
         });
 
+        //Delete Method
+
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

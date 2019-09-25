@@ -13,32 +13,38 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Room Type:" />
+            android:text="Room Type:"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Check In: " />
+            android:text="Check In: "
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Check Out:  " />
+            android:text="Check Out:  "
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Adults: " />
+            android:text="Adults: "
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Childs: " />
+            android:text="Childs: "
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Cost: " />
+            android:text="Cost: "
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout

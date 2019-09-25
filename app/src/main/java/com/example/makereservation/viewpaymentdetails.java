@@ -66,15 +66,15 @@ public class viewpaymentdetails extends AppCompatActivity {
                     readRef2.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+
                                 // TODO: handle the post
                                 String strrid, strcno, strnam, strcvc, strexday;
 
-                                strrid = postSnapshot.child("rid").getValue().toString();
-                                strcno = postSnapshot.child("cno").getValue().toString();
-                                strnam = postSnapshot.child("nam").getValue().toString();
-                                strcvc = postSnapshot.child("cvc").getValue().toString();
-                                strexday = postSnapshot.child("exday").getValue().toString();
+                                strrid = dataSnapshot.child("rid").getValue().toString();
+                                strcno = dataSnapshot.child("cno").getValue().toString();
+                                strnam = dataSnapshot.child("nam").getValue().toString();
+                                strcvc = dataSnapshot.child("cvc").getValue().toString();
+                                strexday = dataSnapshot.child("exday").getValue().toString();
 
                                 rid.add(strrid);
                                 cno.add(strcno);
@@ -86,7 +86,7 @@ public class viewpaymentdetails extends AppCompatActivity {
                                 MyStudentAdapter adapter = new MyStudentAdapter(getApplicationContext(), rid, cno, nam, cvc, exday);
                                 stdListview.setAdapter(adapter);
                             }
-                        }
+
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -116,6 +116,7 @@ class MyStudentAdapter extends ArrayAdapter<String> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View stdrow = layoutInflater.inflate(R.layout.paymentview, parent, false);
 

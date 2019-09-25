@@ -22,10 +22,10 @@
         android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernametxt"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.207" />
 
     <EditText
         android:id="@+id/usernametxt"
@@ -33,7 +33,6 @@
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/inputfield"
         android:ems="10"
@@ -42,40 +41,63 @@
         android:textColorHint="@color/Darkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
+        app:layout_constraintVertical_bias="0.702" />
 
-    <RadioButton
-        android:id="@+id/adminloginbtn"
-        android:layout_width="120dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/inputfield"
-        android:text="Admin LogIn"
-        android:textColorHint="@color/Darkblue"
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="123dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
-        app:layout_constraintStart_toEndOf="@+id/userloginbtn"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/userloginbtn"
-        android:layout_width="120dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/inputfield"
-        android:text="User LogIn"
-        android:textColorHint="@color/Darkblue"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="154dp"
+            android:layout_height="133dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RadioButton
+                android:id="@+id/userloginbtn"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/inputfield"
+                android:text="User LogIn"
+                android:textColorHint="@color/Darkblue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/adminloginbtn"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="8dp"
+
+                android:background="@drawable/inputfield"
+                android:text="Admin LogIn"
+                android:textColorHint="@color/Darkblue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.547"
+                app:layout_constraintStart_toEndOf="@+id/userloginbtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </RadioGroup>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnlogin"
@@ -102,7 +124,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546"
+        app:layout_constraintVertical_bias="0.414"
         app:srcCompat="@drawable/myicon1" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
